@@ -8,6 +8,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -21,12 +23,23 @@ public class Checkin {
     private String realizadopor;
     private Integer cuentaabierta;
 
-    public Checkin(Integer documentocliente, Date dia, String realizadopor, Integer cuentaabierta)
+    @OneToOne
+    @JoinColumn(name = "clientes_documento", referencedColumnName = "documento")
+    private Cliente documentoCliente;
+
+    @OneToOne
+    @JoinColumn(name = "empleados_documento", referencedColumnName = "documento")
+    private Empleado documentoEmpleado;
+
+
+    public Checkin(Integer documentocliente, Date dia, String realizadopor, Integer cuentaabierta, Cliente documentoCliente, Empleado documentoEmpleado)
     {
         this.documentocliente = documentocliente;
         this.dia = dia;
         this.realizadopor = realizadopor;
         this.cuentaabierta = cuentaabierta;
+        this.documentoCliente = documentoCliente;
+        this.documentoEmpleado = documentoEmpleado;
     }
 
     public Checkin()
@@ -52,6 +65,14 @@ public class Checkin {
         return cuentaabierta;
     }
 
+    public Cliente getDocumentoCliente() {
+        return documentoCliente;
+    }
+
+    public Empleado getDocumentoEmpleado() {
+        return documentoEmpleado;
+    }
+
     public void setId(Integer id) {
         this.id = id;
     }
@@ -70,6 +91,14 @@ public class Checkin {
 
     public void setCuentaabierta(Integer cuentaabierta) {
         this.cuentaabierta = cuentaabierta;
+    }
+
+    public Cliente setDocumentoCliente(Cliente documentoCliente) {
+        return this.documentoCliente = documentoCliente;
+    }
+
+    public Empleado getDocumentoEmpleado(Empleado documentoEmpleado) {
+        return documentoEmpleado;
     }
 
 }

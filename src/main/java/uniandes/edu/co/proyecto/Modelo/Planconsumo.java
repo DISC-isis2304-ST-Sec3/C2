@@ -8,6 +8,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -22,13 +24,18 @@ public class Planconsumo {
     private String promocion;
     private String beneficio;
 
-    public Planconsumo(Integer id, Integer tiempo, String tipo, Integer precio, String promocion, String beneficio)
+    @ManyToOne
+    @JoinColumn(name = "hoteles_nombre", referencedColumnName = "nombre")
+    private Hotel nombreHotel;
+
+    public Planconsumo(Integer id, Integer tiempo, String tipo, Integer precio, String promocion, String beneficio, Hotel nombreHotel)
     {
         this.tiempo = tiempo;
         this.tipo = tipo;
         this.precio = precio;
         this.promocion = promocion;
         this.beneficio = beneficio;
+        this.nombreHotel = nombreHotel;
     }
     
     public Planconsumo()
@@ -80,6 +87,14 @@ public class Planconsumo {
 
     public void setBeneficio(String beneficio) {
         this.beneficio = beneficio;
+    }
+
+    public Hotel getNombreHotel() {
+        return nombreHotel;
+    }
+
+    public void setNombreHotel(Hotel nombreHotel) {
+        this.nombreHotel = nombreHotel;
     }
     
 }
