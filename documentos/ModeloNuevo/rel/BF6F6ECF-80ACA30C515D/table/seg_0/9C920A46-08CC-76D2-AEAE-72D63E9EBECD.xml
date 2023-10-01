@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9C920A46-08CC-76D2-AEAE-72D63E9EBECD" name="Reservas">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>0998EC36-5D45-A342-A05C-A129CA85B768</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="C75E3759-84AD-5FA6-9325-FEC4660E9CD4">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>59F48F18-AF80-6F00-8164-78053AD1B179</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NumPersonas" id="6FB57B62-E99F-31B0-B3F1-6BFFF8E7881F">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>9A5C332A-DAA3-F981-59DB-014A1DC6C8EE</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FechaEntrada" id="B7021360-3DD8-F126-C016-917466A33D2F">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>02B1AA75-3C65-3E58-FB04-7674881E4310</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FechaSalida" id="92D72E4E-3C51-A8F8-91D7-D0617F10A9A2">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>FA9835DE-9B4F-198F-28DE-D643E88D0B2A</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Clientes_Documento" id="ED99B17E-496B-EF8F-05A7-57BC2F7EB32E">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>E80B619C-304A-4B43-23E6-B4E66EA8AFC3</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D5C9262F-302A-E5DF-ADBE-FB4B8126420A" name="Reservas_PK">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>4AD6E85D-B05B-2E56-17CA-E75E709822B3</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C75E3759-84AD-5FA6-9325-FEC4660E9CD4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D5BB1C9E-AEB1-A801-733A-8F0A5E6CFE4E" name="Reservas__IDX">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>7B955226-E67D-1154-6423-CB6823181492</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="ED99B17E-496B-EF8F-05A7-57BC2F7EB32E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="81AC592F-FDA5-E37F-EED6-5013BCFBF5FF" name="ReservasServicios">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 03:50:51 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<engineerTo>
+<item key="BF6F6ECF-901B-71D6-2D51-80ACA30C515D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id" id="B3C770A2-3647-2C5D-BECD-EFEE7E59FE2F">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 03:51:07 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<engineerTo>
+<item key="BF6F6ECF-901B-71D6-2D51-80ACA30C515D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Habitacion" id="98050FB3-5A03-2A6F-4467-A618D44B1047">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 03:51:15 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<engineerTo>
+<item key="BF6F6ECF-901B-71D6-2D51-80ACA30C515D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Servicio" id="AF62EDD7-955D-00AB-BCD6-3D3AA90B7C22">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 03:51:23 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<engineerTo>
+<item key="BF6F6ECF-901B-71D6-2D51-80ACA30C515D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="HoraInicio" id="4D753F54-ABD6-B7A9-683D-C24DAA96BF3D">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 03:51:51 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<engineerTo>
+<item key="BF6F6ECF-901B-71D6-2D51-80ACA30C515D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="HoraFin" id="A2E99758-6113-4387-55EA-69DFD20CD3B7">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 03:52:02 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<engineerTo>
+<item key="BF6F6ECF-901B-71D6-2D51-80ACA30C515D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Documento" id="88A1C123-8311-42EF-EF9B-10C039DCD024">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 03:52:27 UTC</createdTime>
+<generatorID>844AB86C-B171-7A13-2E4B-509A35A52E6B</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<engineerTo>
+<item key="BF6F6ECF-901B-71D6-2D51-80ACA30C515D" value="true"/>
+</engineerTo>
+<referedAttribute>97280F6A-1FDA-490E-AFE5-8C59284C022E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1D5EDA05-9906-451B-54E3-8086C701B38E" name="ReservasServicios PK">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 03:51:14 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="BF6F6ECF-901B-71D6-2D51-80ACA30C515D" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B3C770A2-3647-2C5D-BECD-EFEE7E59FE2F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

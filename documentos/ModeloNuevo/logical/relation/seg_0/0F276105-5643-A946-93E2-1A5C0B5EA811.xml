@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="TiendasHotel" directorySegmentName="seg_0" id="0F276105-5643-A946-93E2-1A5C0B5EA811">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 03:20:39 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<engineerTo>
+<item key="BF6F6ECF-901B-71D6-2D51-80ACA30C515D" value="true"/>
+</engineerTo>
+<sourcePk>B9E8A5EB-6004-1857-81F9-8952D157CB1E</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6641B8E7-18BE-C274-36D1-98A1DB11903C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C1CE7FCC-8CD4-6144-D5E2-1A60623D164E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

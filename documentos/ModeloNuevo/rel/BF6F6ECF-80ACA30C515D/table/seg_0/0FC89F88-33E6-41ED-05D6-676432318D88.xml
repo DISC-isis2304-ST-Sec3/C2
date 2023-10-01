@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0FC89F88-33E6-41ED-05D6-676432318D88" name="Platos">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>73621834-3989-8790-CBAD-2374FE4DECD1</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="98585685-8E10-BC76-ABCC-E61711F57CA5">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>77945749-6AEB-2697-1E80-35668EFC0D72</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="A64922E3-2A09-2D1C-62C7-68D31366213E">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>4A87EB5D-2416-918E-5048-1472D5CA4B2C</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Costo" id="868F9D5A-E8F0-B086-2B0E-4AB42F409E0A">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>7405C20E-9636-933E-F628-3C80CF0A4D46</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Restaurantes_Rests_ID" id="357096CB-8969-C69A-F454-D35949A815AB">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8A9FB01B-4EE1-C0FF-04E1-F875448D2941" referredColumn="AB2874E8-0650-613D-417A-28F6B2A8D833"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BD989D1F-FD20-08AF-CAD2-7E4952147F8D" name="Platos_Restaurantes_FK">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>F8E6F109-A14F-1B22-6129-C20E4AF1CC42</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="357096CB-8969-C69A-F454-D35949A815AB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="01702B96-F8BA-66D9-D51D-4E84A72FC967" name="CntasRedes">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Internets_Id" id="412D7814-C2E7-7EEC-55E0-F4140B59F6B8">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A4376BCE-EE15-842B-8A94-8570A6764092" referredColumn="CE3A01DB-08A2-FAB5-6783-4EEC8568D2CE"/>
+</associations>
+</Column>
+<Column name="Cuentas_Id" id="74C1EB51-3372-036A-91C0-6D96908FC5BF">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="96084574-678D-EA18-817D-2C66700DB12A" referredColumn="A61CC67A-35B6-3DBB-AAC2-4D239C8F4A42"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9B52B9B9-4B0A-FF5B-2BFA-1142C3FA965D" name="CntasRedes_PK">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="412D7814-C2E7-7EEC-55E0-F4140B59F6B8"/>
+<colUsage columnID="74C1EB51-3372-036A-91C0-6D96908FC5BF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="04E20FA7-1BE3-EB42-B6F7-39703A747D84" name="CntasRedes_Internets_FK">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>EE5108CC-7B40-9540-5BA7-EED9FE83B8C6</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="412D7814-C2E7-7EEC-55E0-F4140B59F6B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="855178A0-0AC8-E122-DB0D-F44EE6D17577" name="CntasRedes_Cuentas_FK">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>EE5108CC-7B40-9540-5BA7-EED9FE83B8C6</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="74C1EB51-3372-036A-91C0-6D96908FC5BF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8282E559-B38F-EEDA-EB88-495AAE45492F" name="Bares">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>3E053757-50B0-1DF2-3B7F-DF48FBFE1321</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Nombre" id="EA276594-E9AF-E625-2E40-26EFB4D28976">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>8015A14D-F479-9BB6-7248-13F49AD6FBC7</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Estilo" id="8FA0B192-8FC4-D961-AD4B-11B144A80DF5">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>DE6B3378-46CF-228C-C6CD-942F2048442F</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Costo" id="42BE1D58-A92D-3C2B-7D91-81DE8314D8BF">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>D7043283-03E9-947F-2B9C-862810C2EFCB</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Capacidad" id="9D40C770-209E-4BA0-8166-440944DA4857">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>C972805B-CB61-4FC7-121C-AFA05CA70779</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CostoCargado" id="CF2150C3-B24A-1F4C-C9B0-BF29EE917335">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>AEA3D456-DC7F-49F5-AAA9-EAADC98186A8</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Hoteles_Nombre" id="2FE00B31-EC80-4103-F0B9-C2D299FB6010">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>D5C2E7D0-7533-06A1-0CAF-6BBD75DAFDAF</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="258CF0D0-6763-2D6E-0F0B-CCA33698C939" referredColumn="51CEAB79-0235-04CA-C4FF-B0069D4247E3"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8226EACB-FC14-C21A-E9B3-AA768776967C" name="Bares_PK">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>F844AE14-FB60-86E8-8040-888FB940E8B1</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA276594-E9AF-E625-2E40-26EFB4D28976"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3506513B-4C4E-E4CE-FD88-78718619EBF9" name="Bares_Hoteles_FK">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>1819659F-E875-BF92-1903-AABAD5490CC1</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2FE00B31-EC80-4103-F0B9-C2D299FB6010"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CB75414D-1111-38DB-2E84-1ED17850C16D" containerWithKeyObject="7038A479-A538-90FA-9AB0-31CBD7DC21C1" localFKIndex="FA233AD8-0A72-51C7-1EBA-103682D08201" name="Maquinas_Gimnasios_FK">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>C9036824-3EC8-E3F3-B7CD-D7AF3A567D26</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<referredTableLongName>Gimnasios</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C5D5AEB1-9366-91B6-6016-2D9555F32F03</referredTableID>
+<keyObject>E9F317A6-075D-0C39-171D-3B47AE1F2A9C</keyObject>
+<referredKeyID>E9F317A6-075D-0C39-171D-3B47AE1F2A9C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C88E7B5A-EC4C-DD66-EEF5-AF466DF7831C" name="Cuentas">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>03BD9412-675B-3B22-9370-7C3D6C2256C2</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="A61CC67A-35B6-3DBB-AAC2-4D239C8F4A42">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>247C3B06-1A6F-3B4F-F25A-837046AC43A6</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Consumo" id="018414E3-3711-F4C8-8441-E6BE8723228A">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>C54946D9-E42A-3AF0-2CB5-63E23C86AB43</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Valor" id="E9F5420B-6854-8D14-4F03-98082312BAB0">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>49A8C689-5F3C-6FF8-DEBE-E7EF281BFD93</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Clientes_Documento" id="6A2FDFA6-5B2E-6481-F9AE-7B438BC3F35E">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>0C0B4E39-1B4F-47D6-09E8-50AD1AC8D244</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2EE84250-7D6A-9AA9-E5B8-C83DD235D1B7" referredColumn="F4B4BE89-3963-DECD-E44A-3C087242B84E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2378E80B-0B83-09E7-E75C-E6B16C68ED63" name="Cuentas_PK">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>62C655A8-76CB-4F9A-2BD1-AEC232DAF70C</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A61CC67A-35B6-3DBB-AAC2-4D239C8F4A42"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AD9892CD-C648-2F26-BCDF-382D2CC7BA22" name="Cuentas__IDX">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>AFF9B7E4-B33C-AFA0-88D1-9EDBC6BF34E0</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="6A2FDFA6-5B2E-6481-F9AE-7B438BC3F35E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="11D3AD62-FF02-CE20-78A5-D3821738B545" name="Cuentas_Clientes_FK">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>AFF9B7E4-B33C-AFA0-88D1-9EDBC6BF34E0</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A2FDFA6-5B2E-6481-F9AE-7B438BC3F35E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

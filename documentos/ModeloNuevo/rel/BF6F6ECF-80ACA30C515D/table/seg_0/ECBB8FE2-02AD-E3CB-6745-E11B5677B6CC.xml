@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ECBB8FE2-02AD-E3CB-6745-E11B5677B6CC" name="CntasSupers">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Cuentas_Id" id="3B3C5584-1D3F-46CA-57EC-3B5EFDF7455E">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CA8A600A-A1E0-2A75-B122-024EE5D27020" referredColumn="A61CC67A-35B6-3DBB-AAC2-4D239C8F4A42"/>
+</associations>
+</Column>
+<Column name="Supers_Nombre" id="C5F3FC63-8D05-7AC6-D053-EB3955AFCB48">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E7515565-2342-1210-24AE-A86D36DD2896" referredColumn="814D2E51-24EF-E0A0-C4F7-2EC0E8092743"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0DF5C9BF-BD4F-2C2B-A27B-E8592F21CFE5" name="CntasSupers_PK">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3B3C5584-1D3F-46CA-57EC-3B5EFDF7455E"/>
+<colUsage columnID="C5F3FC63-8D05-7AC6-D053-EB3955AFCB48"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="580CAA4A-9222-B836-3C7C-7FAE0434FF75" name="CntasSupers_Cuentas_FK">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>9A8A5EB4-707F-F333-3251-6CA9DEDCB194</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3B3C5584-1D3F-46CA-57EC-3B5EFDF7455E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3694A757-E269-0DC3-E883-653FCE760156" name="CntasSupers_Supers_FK">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>9A8A5EB4-707F-F333-3251-6CA9DEDCB194</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C5F3FC63-8D05-7AC6-D053-EB3955AFCB48"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

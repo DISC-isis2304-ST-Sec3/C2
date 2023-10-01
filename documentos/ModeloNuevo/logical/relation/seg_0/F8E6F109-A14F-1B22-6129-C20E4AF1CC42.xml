@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Carta" directorySegmentName="seg_0" id="F8E6F109-A14F-1B22-6129-C20E4AF1CC42">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:11:24 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<engineerTo>
+<item key="BF6F6ECF-901B-71D6-2D51-80ACA30C515D" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1441974B-237D-C0A0-17D8-8BC046C5F754</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>73621834-3989-8790-CBAD-2374FE4DECD1</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

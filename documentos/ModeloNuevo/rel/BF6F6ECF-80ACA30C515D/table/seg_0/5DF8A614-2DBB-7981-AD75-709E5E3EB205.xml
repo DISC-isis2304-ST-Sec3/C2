@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5DF8A614-2DBB-7981-AD75-709E5E3EB205" name="CntasRes">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Cuentas_Id" id="31121B6A-F00F-F211-FF9E-EF795768F4B1">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7FCD605A-6B92-D891-4A2E-79B43B3A9A53" referredColumn="A61CC67A-35B6-3DBB-AAC2-4D239C8F4A42"/>
+</associations>
+</Column>
+<Column name="Restaurantes_Rests_ID" id="83E8BA24-8C05-0F91-B073-CE357A67D107">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BC423802-E68E-5012-CD29-149E119FA065" referredColumn="AB2874E8-0650-613D-417A-28F6B2A8D833"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DC79A0FD-B231-38DE-7EE1-A58750FE5A1F" name="CntasRes_PK">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="31121B6A-F00F-F211-FF9E-EF795768F4B1"/>
+<colUsage columnID="83E8BA24-8C05-0F91-B073-CE357A67D107"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="74C43E6A-C271-5820-C062-23D5C5A99AAD" name="CntasRes_Cuentas_FK">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>E9B3CD78-E579-4660-377A-BBE0CFE27A7D</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="31121B6A-F00F-F211-FF9E-EF795768F4B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="042706F9-D618-9ED9-BFAB-79993EF9EA62" name="CntasRes_Restaurantes_FK">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>E9B3CD78-E579-4660-377A-BBE0CFE27A7D</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="83E8BA24-8C05-0F91-B073-CE357A67D107"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

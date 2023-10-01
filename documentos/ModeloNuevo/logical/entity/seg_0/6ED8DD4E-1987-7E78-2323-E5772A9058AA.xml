@@ -1,0 +1,182 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6ED8DD4E-1987-7E78-2323-E5772A9058AA" name="Clientes">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 03:23:20 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<engineerTo>
+<item key="BF6F6ECF-901B-71D6-2D51-80ACA30C515D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Nombre" id="5C8B2282-0681-4E04-F12D-52BBA7E51AB2">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 03:23:24 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<engineerTo>
+<item key="BF6F6ECF-901B-71D6-2D51-80ACA30C515D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Apellido" id="0258F76C-6A1F-D09A-1CA5-E5CCE036CB6B">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 03:23:39 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<engineerTo>
+<item key="BF6F6ECF-901B-71D6-2D51-80ACA30C515D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Documento" id="97280F6A-1FDA-490E-AFE5-8C59284C022E">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 03:23:51 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<engineerTo>
+<item key="BF6F6ECF-901B-71D6-2D51-80ACA30C515D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Edad" id="35C0D105-6085-7D3C-C32C-731888F307E0">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 03:24:18 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<engineerTo>
+<item key="BF6F6ECF-901B-71D6-2D51-80ACA30C515D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Habitacion" id="970533CA-1719-1679-81CA-9ED3C4174261">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 03:24:26 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<engineerTo>
+<item key="BF6F6ECF-901B-71D6-2D51-80ACA30C515D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Consumo" id="38CE4982-2EED-3159-9A4E-4797EB66C81F">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 03:24:34 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<engineerTo>
+<item key="BF6F6ECF-901B-71D6-2D51-80ACA30C515D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre1" id="8BF39CF0-CA88-520D-E396-C215CF30A2C4">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 03:25:44 UTC</createdTime>
+<generatorID>C76B6196-2FEA-14B4-4923-E74A5C279582</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<engineerTo>
+<item key="BF6F6ECF-901B-71D6-2D51-80ACA30C515D" value="true"/>
+</engineerTo>
+<referedAttribute>F8AD98C1-378F-DA5E-5534-BF1E4E4391A0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id" id="CC23C33D-634D-47DD-BB06-24D6ED5553DA">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 03:36:52 UTC</createdTime>
+<generatorID>BE09B091-F146-DD39-399B-F14C0C6581E5</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<engineerTo>
+<item key="BF6F6ECF-901B-71D6-2D51-80ACA30C515D" value="true"/>
+</engineerTo>
+<referedAttribute>3DCE3884-6EF9-B954-A1FA-B0EA65776E3C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id1" id="C7C5ED4B-8440-CF33-AA0E-AC1DAB76D9DB">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 03:44:25 UTC</createdTime>
+<generatorID>4D722038-B04D-DE3B-AE1B-E9024A537731</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<engineerTo>
+<item key="BF6F6ECF-901B-71D6-2D51-80ACA30C515D" value="true"/>
+</engineerTo>
+<referedAttribute>FE196614-C36F-F2E1-22CB-2245E66EAA7C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id2" id="A1C7A2B0-A27C-CEF4-F9DB-18B5BB173353">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 03:54:18 UTC</createdTime>
+<generatorID>7B955226-E67D-1154-6423-CB6823181492</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<engineerTo>
+<item key="BF6F6ECF-901B-71D6-2D51-80ACA30C515D" value="true"/>
+</engineerTo>
+<referedAttribute>59F48F18-AF80-6F00-8164-78053AD1B179</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id3" id="527E1C6F-64A1-7C44-B007-2D164CEAC058">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 17:54:46 UTC</createdTime>
+<generatorID>AFF9B7E4-B33C-AFA0-88D1-9EDBC6BF34E0</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<engineerTo>
+<item key="BF6F6ECF-901B-71D6-2D51-80ACA30C515D" value="true"/>
+</engineerTo>
+<referedAttribute>247C3B06-1A6F-3B4F-F25A-837046AC43A6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CFC3A7E5-A631-449F-D8DE-C9183B0A6796" name="Clientes PK">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 03:24:02 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="BF6F6ECF-901B-71D6-2D51-80ACA30C515D" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>97280F6A-1FDA-490E-AFE5-8C59284C022E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="SuperHotel" directorySegmentName="seg_0" id="0ADCFBF6-F423-4F81-E31D-7EDB81790197">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 03:58:42 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<engineerTo>
+<item key="BF6F6ECF-901B-71D6-2D51-80ACA30C515D" value="true"/>
+</engineerTo>
+<sourcePk>B9E8A5EB-6004-1857-81F9-8952D157CB1E</sourcePk>
+<targetPk>61A7BE84-950F-2180-4912-963A6C8A06A0</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6641B8E7-18BE-C274-36D1-98A1DB11903C</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>0E7F6B39-82B4-E65B-0B72-9FFA04209BAB</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

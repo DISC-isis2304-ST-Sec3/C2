@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C4E860D4-2D4F-19F9-4666-246DA7C5848A" containerWithKeyObject="6AD3D1F9-73A0-D39D-7875-FB1AC9370DC0" localFKIndex="2229A67A-5E5E-127A-0780-D28AAA6CBBF4" name="CntasBares_Bares_FK">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>BA25A596-157E-14E0-213A-6A7F8DAC5E0C</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<referredTableLongName>Bares</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8282E559-B38F-EEDA-EB88-495AAE45492F</referredTableID>
+<keyObject>8226EACB-FC14-C21A-E9B3-AA768776967C</keyObject>
+<referredKeyID>8226EACB-FC14-C21A-E9B3-AA768776967C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Nombre</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

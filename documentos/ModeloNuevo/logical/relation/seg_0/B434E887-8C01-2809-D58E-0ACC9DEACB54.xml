@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ComodidadesHab" directorySegmentName="seg_0" id="B434E887-8C01-2809-D58E-0ACC9DEACB54">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 03:14:49 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<engineerTo>
+<item key="BF6F6ECF-901B-71D6-2D51-80ACA30C515D" value="true"/>
+</engineerTo>
+<sourcePk>BFE500FD-BB1F-D902-92EA-001B98FADE08</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B5B4858E-9880-58A2-A031-4C4DD404A2BC</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C4C59E8D-99E3-A9BF-C79F-5C87FF68F1D6</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

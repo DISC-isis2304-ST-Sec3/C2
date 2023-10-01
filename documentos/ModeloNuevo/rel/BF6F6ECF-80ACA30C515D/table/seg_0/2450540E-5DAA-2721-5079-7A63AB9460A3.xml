@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2450540E-5DAA-2721-5079-7A63AB9460A3" name="CuentasSpas">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Cuentas_Id" id="57043966-FA6C-939E-000A-77335845511B">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E3E332B0-E4EF-BD5D-3DD0-45C7042580C9" referredColumn="A61CC67A-35B6-3DBB-AAC2-4D239C8F4A42"/>
+</associations>
+</Column>
+<Column name="Spas_Id" id="FE90EB4E-7A13-BB05-3A4F-967A357B399A">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C2E27BA5-A2B2-44DB-44D5-B246C58AE449" referredColumn="771AAB00-739E-55F2-64B8-5F3DA6638280"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="511A282F-9D56-AEF2-4401-66627F26AE5B" name="CuentasSpas_PK">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="57043966-FA6C-939E-000A-77335845511B"/>
+<colUsage columnID="FE90EB4E-7A13-BB05-3A4F-967A357B399A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="40E9D02D-82BB-EBB8-A054-2C244FB3E288" name="CuentasSpas_Cuentas_FK">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>8C15829C-6EBF-7D41-26F2-B8CDAF98106B</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="57043966-FA6C-939E-000A-77335845511B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1703DAFD-A3BB-2493-B5E0-AA3ECC76A01A" name="CuentasSpas_Spas_FK">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>8C15829C-6EBF-7D41-26F2-B8CDAF98106B</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FE90EB4E-7A13-BB05-3A4F-967A357B399A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

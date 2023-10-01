@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="317EF693-630D-2526-94C3-84FBA8A7B953" name="Comodidades">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>C4C59E8D-99E3-A9BF-C79F-5C87FF68F1D6</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Comodidad" id="9E831613-3BEF-5864-7F77-DED002064A09">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>D9133AFE-68E4-B437-2628-25D2602BA971</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Habitaciones_Id" id="5F1B9E04-E2D4-E17D-90CF-0B109EC50CD0">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>A7472E34-9B42-874C-A28D-FC25A6AAEF87</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AC580B2F-449B-4772-56EC-931DA1FF8CE1" referredColumn="EDB5E861-1079-C5FE-1B1E-A71E864060BD"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5C3C5B58-F07A-D509-4D0E-174451ED5830" name="Comodidades_PK">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 17:57:45 UTC</createdTime>
+<generatorID>0AD97536-CCE1-7BA8-8C09-0E620A6E4883</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5F1B9E04-E2D4-E17D-90CF-0B109EC50CD0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="93B44001-4D20-A9DF-D679-991ED2A3D4E4" name="Comodidades_Habitaciones_FK">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>B434E887-8C01-2809-D58E-0ACC9DEACB54</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5F1B9E04-E2D4-E17D-90CF-0B109EC50CD0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

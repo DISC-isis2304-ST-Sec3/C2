@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6AD3D1F9-73A0-D39D-7875-FB1AC9370DC0" name="CntasBares">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Cuentas_Id" id="60ABF36A-B6BB-9A36-639F-007A2438881E">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7C9549D0-64EB-D3D9-98B6-62818EF1B5E3" referredColumn="A61CC67A-35B6-3DBB-AAC2-4D239C8F4A42"/>
+</associations>
+</Column>
+<Column name="Bares_Nombre" id="1A2D18EE-C96B-D1F0-BF50-1EA14A6135F2">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C4E860D4-2D4F-19F9-4666-246DA7C5848A" referredColumn="EA276594-E9AF-E625-2E40-26EFB4D28976"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EFCA791F-358E-794B-21D9-0E1E8786B51B" name="CntasBares_PK">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="60ABF36A-B6BB-9A36-639F-007A2438881E"/>
+<colUsage columnID="1A2D18EE-C96B-D1F0-BF50-1EA14A6135F2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BF10B6D8-D306-51AD-91AD-4D511A8F2741" name="CntasBares_Cuentas_FK">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>BA25A596-157E-14E0-213A-6A7F8DAC5E0C</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="60ABF36A-B6BB-9A36-639F-007A2438881E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2229A67A-5E5E-127A-0780-D28AAA6CBBF4" name="CntasBares_Bares_FK">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>BA25A596-157E-14E0-213A-6A7F8DAC5E0C</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1A2D18EE-C96B-D1F0-BF50-1EA14A6135F2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

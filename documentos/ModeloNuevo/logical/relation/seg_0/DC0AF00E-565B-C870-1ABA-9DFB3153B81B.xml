@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Planes" directorySegmentName="seg_0" id="DC0AF00E-565B-C870-1ABA-9DFB3153B81B">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 03:48:02 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<engineerTo>
+<item key="BF6F6ECF-901B-71D6-2D51-80ACA30C515D" value="true"/>
+</engineerTo>
+<sourcePk>B9E8A5EB-6004-1857-81F9-8952D157CB1E</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6641B8E7-18BE-C274-36D1-98A1DB11903C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>5E1485FC-6801-E088-2251-D65158A8918E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

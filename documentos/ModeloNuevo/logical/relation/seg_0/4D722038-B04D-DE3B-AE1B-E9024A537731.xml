@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="SalidaClientes" directorySegmentName="seg_0" id="4D722038-B04D-DE3B-AE1B-E9024A537731">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 03:44:25 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<engineerTo>
+<item key="BF6F6ECF-901B-71D6-2D51-80ACA30C515D" value="true"/>
+</engineerTo>
+<sourcePk>0ADF9550-F321-2062-A312-F2C91EB9DA43</sourcePk>
+<targetPk>CFC3A7E5-A631-449F-D8DE-C9183B0A6796</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>0C641912-4FBA-E322-5E19-4DD603B8F8F7</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>6ED8DD4E-1987-7E78-2323-E5772A9058AA</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

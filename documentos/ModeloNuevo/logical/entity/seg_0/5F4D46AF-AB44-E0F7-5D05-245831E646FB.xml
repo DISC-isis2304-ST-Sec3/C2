@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5F4D46AF-AB44-E0F7-5D05-245831E646FB" name="Acompañantes">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 03:39:48 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<engineerTo>
+<item key="BF6F6ECF-901B-71D6-2D51-80ACA30C515D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>Acomp</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Documento" id="515CA83A-48CD-B48D-BAD1-5AB51257252F">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 03:41:22 UTC</createdTime>
+<generatorID>EC385E67-9F7B-C554-B72E-9826E96C04C7</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<engineerTo>
+<item key="BF6F6ECF-901B-71D6-2D51-80ACA30C515D" value="true"/>
+</engineerTo>
+<referedAttribute>97280F6A-1FDA-490E-AFE5-8C59284C022E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IdAcompañante" id="898B44CE-C7C5-4C2E-0D4B-D7C46EA70E59">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 03:40:22 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<engineerTo>
+<item key="BF6F6ECF-901B-71D6-2D51-80ACA30C515D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2E531B9C-EC9D-BB57-4FC2-2047E03A8A54" name="Acompañantes PK">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 03:40:21 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<engineerTo>
+<item key="BF6F6ECF-901B-71D6-2D51-80ACA30C515D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>898B44CE-C7C5-4C2E-0D4B-D7C46EA70E59</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

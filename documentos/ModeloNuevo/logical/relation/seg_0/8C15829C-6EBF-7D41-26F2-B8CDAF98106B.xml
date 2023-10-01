@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CuentasSpas" directorySegmentName="seg_0" id="8C15829C-6EBF-7D41-26F2-B8CDAF98106B">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:32:53 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<engineerTo>
+<item key="BF6F6ECF-901B-71D6-2D51-80ACA30C515D" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>03BD9412-675B-3B22-9370-7C3D6C2256C2</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>CC6F0BB5-419E-2166-3E70-361E51048205</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

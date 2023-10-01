@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CntasBares" directorySegmentName="seg_0" id="BA25A596-157E-14E0-213A-6A7F8DAC5E0C">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:35:19 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<engineerTo>
+<item key="BF6F6ECF-901B-71D6-2D51-80ACA30C515D" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>03BD9412-675B-3B22-9370-7C3D6C2256C2</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3E053757-50B0-1DF2-3B7F-DF48FBFE1321</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

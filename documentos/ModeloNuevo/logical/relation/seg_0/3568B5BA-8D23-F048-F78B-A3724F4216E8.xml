@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="PrdsSuper" directorySegmentName="seg_0" id="3568B5BA-8D23-F048-F78B-A3724F4216E8">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 03:59:45 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<engineerTo>
+<item key="BF6F6ECF-901B-71D6-2D51-80ACA30C515D" value="true"/>
+</engineerTo>
+<sourcePk>61A7BE84-950F-2180-4912-963A6C8A06A0</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>0E7F6B39-82B4-E65B-0B72-9FFA04209BAB</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>DAAE7B31-92A1-37C3-EA28-58E0826D105A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

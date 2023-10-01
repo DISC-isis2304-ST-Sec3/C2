@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="32C0387F-3E7C-CBBB-2CEE-FB3479DB59D6" name="Acompañantes">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>5F4D46AF-AB44-E0F7-5D05-245831E646FB</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<abbreviation>Acomp</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IdAcompañante" id="F9689F6D-641B-9F5A-37BC-46C70CE01896">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>898B44CE-C7C5-4C2E-0D4B-D7C46EA70E59</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Clientes_Documento" id="6B5E6C58-2EBD-0DBC-6165-E441A039762C">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>515CA83A-48CD-B48D-BAD1-5AB51257252F</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AD8D1D1B-6891-8093-7043-A04AFBA9BF8E" referredColumn="F4B4BE89-3963-DECD-E44A-3C087242B84E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="18A4BD54-EE24-F005-9B38-55C0C4333FE6" name="Acompañantes_PK">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>2E531B9C-EC9D-BB57-4FC2-2047E03A8A54</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F9689F6D-641B-9F5A-37BC-46C70CE01896"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="28BF1066-B200-51AA-FD6C-9DCFAEE8040C" name="Acompañantes_Clientes_FK">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>EC385E67-9F7B-C554-B72E-9826E96C04C7</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6B5E6C58-2EBD-0DBC-6165-E441A039762C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

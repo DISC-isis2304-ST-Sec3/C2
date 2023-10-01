@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E62AD645-1295-6F04-9550-184E3988758F" name="CntasTiendas">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Cuentas_Id" id="9B8E11DD-37E2-83DD-B2EC-A50592A1DE8A">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="19199E80-29FF-158E-B949-121A8A208232" referredColumn="A61CC67A-35B6-3DBB-AAC2-4D239C8F4A42"/>
+</associations>
+</Column>
+<Column name="Tiendas_Nombre" id="76BAF16A-B66C-A46E-4A34-B084949A9D5A">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="00688528-5CA4-3FE8-B6E3-FA794A0FCAB0" referredColumn="C50F9BEE-40E3-1096-DD1D-AE28311F4724"/>
+</associations>
+</Column>
+<Column name="Tiendas_Nombre1" id="24F572F8-CAD5-1349-A5E8-177FE80C03E7">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="00688528-5CA4-3FE8-B6E3-FA794A0FCAB0" referredColumn="D9811103-66EF-4599-A01E-AD8EE9859594"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="837BA157-B7E8-6F59-AA57-4D5A4F20F920" name="CntasTiendas_PK">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9B8E11DD-37E2-83DD-B2EC-A50592A1DE8A"/>
+<colUsage columnID="76BAF16A-B66C-A46E-4A34-B084949A9D5A"/>
+<colUsage columnID="24F572F8-CAD5-1349-A5E8-177FE80C03E7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9EE9A3A4-CA3D-F204-A15E-791A1ABAA558" name="CntasTiendas_Cuentas_FK">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>88D111DA-5E40-9474-3DFD-BA8F09EC1CE0</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9B8E11DD-37E2-83DD-B2EC-A50592A1DE8A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="52C1D017-F762-E6E6-ADC2-80789D657BAF" name="CntasTiendas_Tiendas_FK">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>88D111DA-5E40-9474-3DFD-BA8F09EC1CE0</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="76BAF16A-B66C-A46E-4A34-B084949A9D5A"/>
+<colUsage columnID="24F572F8-CAD5-1349-A5E8-177FE80C03E7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

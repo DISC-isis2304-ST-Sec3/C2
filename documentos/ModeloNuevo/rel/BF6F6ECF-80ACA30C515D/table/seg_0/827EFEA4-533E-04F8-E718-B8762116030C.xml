@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="827EFEA4-533E-04F8-E718-B8762116030C" name="CntasSer">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Cuentas_Id" id="EA01AD34-988C-3895-B725-CCCBE0B0577E">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="37D975D6-70FA-7292-94F9-8AA832A18D5A" referredColumn="A61CC67A-35B6-3DBB-AAC2-4D239C8F4A42"/>
+</associations>
+</Column>
+<Column name="Servicios_Id" id="24F35FA5-3B0E-6C15-7CE2-BC2A5BEDA4B1">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5A497B73-E5D4-8BD2-F9A5-1049D780AD4C" referredColumn="02209747-1C63-E325-E0AE-588F658C9431"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7443FFE6-4192-C68B-CFE8-002410A57C3C" name="CntasSer_PK">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA01AD34-988C-3895-B725-CCCBE0B0577E"/>
+<colUsage columnID="24F35FA5-3B0E-6C15-7CE2-BC2A5BEDA4B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6A7FA511-8400-E81B-EDCC-6929A97E06BA" name="CntasSer_Cuentas_FK">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>5275F96B-BA56-10BC-3C29-2DEB4F5ACFDC</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA01AD34-988C-3895-B725-CCCBE0B0577E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FE0B3E00-9FE4-E0D6-0901-97607E14E152" name="CntasSer_Servicios_FK">
+<createdBy>Santiago</createdBy>
+<createdTime>2023-10-01 04:37:31 UTC</createdTime>
+<generatorID>5275F96B-BA56-10BC-3C29-2DEB4F5ACFDC</generatorID>
+<ownerDesignName>ModeloNuevo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="24F35FA5-3B0E-6C15-7CE2-BC2A5BEDA4B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
