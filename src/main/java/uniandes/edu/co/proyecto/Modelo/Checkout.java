@@ -1,0 +1,75 @@
+package uniandes.edu.co.proyecto.Modelo;
+
+import java.sql.Date;
+
+import org.hibernate.id.IntegralDataTypeHolder;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="checksouts")
+public class Checkout {
+    @Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
+    private Integer id;
+    private Date dia;
+    private Integer cuentaabierta;
+    private Integer cuentatotal;
+    private Integer pagocuenta;
+
+    public Checkout(Date dia, Integer cuentaabierta, Integer cuentatotal, Integer pagocuenta){
+        this.dia = dia;
+        this.cuentaabierta = cuentaabierta;
+        this.cuentatotal = pagocuenta;
+    }
+
+    public Checkout()
+    {;}
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public Date getDia() {
+        return dia;
+    }
+
+    public void setDia(Date dia) {
+        this.dia = dia;
+    }
+
+    public Integer getCuentaabierta() {
+        return cuentaabierta;
+    }
+
+    public void setCuentaabierta(Integer cuentaabierta) {
+        this.cuentaabierta = cuentaabierta;
+    }
+
+    public Integer getCuentatotal() {
+        return cuentatotal;
+    }
+
+    public void setCuentatotal(Integer cuentatotal) {
+        this.cuentatotal = cuentatotal;
+    }
+
+    public Integer getPagocuenta() {
+        return pagocuenta;
+    }
+
+    public void setPagocuenta(Integer pagocuenta) {
+        this.pagocuenta = pagocuenta;
+    }
+
+}
+
+
