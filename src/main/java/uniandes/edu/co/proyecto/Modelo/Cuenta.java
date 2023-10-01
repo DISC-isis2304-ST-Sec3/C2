@@ -21,9 +21,10 @@ public class Cuenta {
     @JoinColumn(name="documento_cliente", referencedColumnName = "id")
     private Cliente cliente;
 
-    public Cuenta(Integer consumo, Integer valor){
+    public Cuenta(Integer consumo, Integer valor, Cliente cliente){
         this.consumo = consumo;
         this.valor = valor;
+        this.cliente = cliente;
     }
 
     public Cuenta()
@@ -52,4 +53,13 @@ public class Cuenta {
     public void setValor(Integer valor) {
         this.valor = valor;
     }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
+
 }

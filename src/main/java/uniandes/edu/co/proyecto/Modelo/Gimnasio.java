@@ -21,13 +21,14 @@ public class Gimnasio {
     private Date horario;
     
     @OneToMany(mappedBy="gimnasio")
-    @JoinColumn(name="id_hotel", referencedColumnName = "id")
-    private Hotel hotel;
+    @JoinColumn(name="hoteles_nombre", referencedColumnName = "nombre")
+    private Hotel nombreHotel;
 
-    public Gimnasio(Integer capacidad, Date horario)
+    public Gimnasio(Integer capacidad, Date horario, Hotel nombreHotel)
     {
         this.capacidad = capacidad;
         this.horario = horario;
+        this.nombreHotel = nombreHotel;
     }
 
     public Gimnasio()
@@ -55,6 +56,14 @@ public class Gimnasio {
 
     public void setHorario(Date horario) {
         this.horario = horario;
+    }
+
+    public Hotel getNombreHotel() {
+        return nombreHotel;
+    }
+
+    public void setNombreHotel(Hotel nombreHotel) {
+        this.nombreHotel = nombreHotel;
     }
     
 }
