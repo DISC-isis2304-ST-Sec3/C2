@@ -8,6 +8,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
@@ -19,6 +21,10 @@ public class Gimnasio {
     private Integer id;
     private Integer capacidad;
     private Date horario;
+    
+    @OneToMany(mappedBy="gimnasio")
+    @JoinColumn(name="id_hotel", referencedColumnName = "id")
+    private Hotel hotel;
 
     public Gimnasio(Integer capacidad, Date horario)
     {

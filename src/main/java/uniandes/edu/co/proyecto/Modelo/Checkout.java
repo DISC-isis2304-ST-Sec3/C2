@@ -8,6 +8,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -21,14 +23,23 @@ public class Checkout {
     private Integer cuentatotal;
     private Integer pagocuenta;
 
-    public Checkout(Date dia, Integer cuentaabierta, Integer cuentatotal, Integer pagocuenta){
+    @OneToOne
+    @JoinColumn(name="documento_cliente", referencedColumnName = "id")
+    private Cliente cliente;
+
+    
+    public Checkout() {
+        ;
+        // default constructor
+    }
+
+    public Checkout(Date dia, Integer cuentaabierta, Integer cuentatotal, Integer pagocuenta) {
         this.dia = dia;
         this.cuentaabierta = cuentaabierta;
         this.cuentatotal = pagocuenta;
     }
 
-    public Checkout()
-    {;}
+   
 
     public Integer getId() {
         return id;
