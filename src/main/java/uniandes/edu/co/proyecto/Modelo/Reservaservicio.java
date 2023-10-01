@@ -1,10 +1,5 @@
 package uniandes.edu.co.proyecto.Modelo;
 
-import java.sql.Date;
-
-import org.apache.catalina.valves.rewrite.InternalRewriteMap;
-import org.hibernate.id.IntegralDataTypeHolder;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;

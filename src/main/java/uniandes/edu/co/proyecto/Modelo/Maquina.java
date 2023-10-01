@@ -1,7 +1,5 @@
 package uniandes.edu.co.proyecto.Modelo;
 
-import org.hibernate.id.IntegralDataTypeHolder;
-
 import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
