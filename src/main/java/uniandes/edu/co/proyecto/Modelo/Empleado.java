@@ -4,6 +4,8 @@ import org.hibernate.id.IntegralDataTypeHolder;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -17,13 +19,18 @@ public class Empleado {
     private String cargo;
     private Integer salario;
 
-    public Empleado(Integer documento, String nombre, String apellido, Integer edad, String cargo, Integer salario){
+    @ManyToOne
+    @JoinColumn(name = "hoteles_nombre", referencedColumnName = "nombre")
+    private Hotel nombreHotel;
+
+    public Empleado(Integer documento, String nombre, String apellido, Integer edad, String cargo, Integer salario, Hotel nombreHotel){
         this.documento = documento;
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
         this.cargo = cargo;
         this.salario = salario;
+        this.nombreHotel = nombreHotel;
     }
 
     public Empleado()
@@ -75,6 +82,14 @@ public class Empleado {
 
     public void setSalario(Integer salario) {
         this.salario = salario;
+    }
+
+    public Hotel getNombreHotel() {
+        return nombreHotel;
+    }
+
+    public void setNombreHotel(Hotel nombreHotel) {
+        this.nombreHotel = nombreHotel;
     }
 
 }

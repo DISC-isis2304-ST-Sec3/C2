@@ -8,6 +8,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -20,11 +22,16 @@ public class Servicio {
     private Integer numprendas;
     private Integer costos;
 
-    public Servicio(String tipo, Integer numprendas, Integer costos)
+    @ManyToOne
+    @JoinColumn(name = "hoteles_nombre", referencedColumnName = "nombre")
+    private Hotel nombre_hotel;
+
+    public Servicio(String tipo, Integer numprendas, Integer costos, Hotel nombre_hotel)
     {
         this.tipo = tipo;
         this.numprendas = numprendas;
         this.costos = costos;
+        this.nombre_hotel = nombre_hotel;
     }
 
     public Servicio()
@@ -61,6 +68,15 @@ public class Servicio {
     public void setCostos(Integer costos) {
         this.costos = costos;
     }
+
+    public Hotel getNombre_hotel() {
+        return nombre_hotel;
+    }
+
+    public void setNombre_hotel(Hotel nombre_hotel) {
+        this.nombre_hotel = nombre_hotel;
+    }
+
 }
 
 

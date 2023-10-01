@@ -8,6 +8,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import jakarta.persistence.criteria.CriteriaBuilder.In;
 
@@ -20,10 +22,20 @@ public class Prestamo {
     private Integer devuelto;
     private Integer malestado;
 
-    public Prestamo(Integer devuelto, Integer malestado)
+    @ManyToOne
+    @JoinColumn(name = "hoteles_nombre", referencedColumnName = "nombre")
+    private Hotel nombreHotel;
+
+    @ManyToOne
+    @JoinColumn(name = "cuentas_id", referencedColumnName = "id")
+    private Cuenta idCuenta;
+
+    public Prestamo(Integer devuelto, Integer malestado, Hotel nombreHotel, Cuenta idCuenta)
     {
         this.devuelto = devuelto;
         this.malestado = malestado;
+        this.nombreHotel = nombreHotel;
+        this.idCuenta = idCuenta;
     }
 
     public Prestamo()
@@ -53,6 +65,23 @@ public class Prestamo {
         this.malestado = malestado;
     }
 
+    public Hotel getNombreHotel() {
+        return nombreHotel;
+    }
+
+    public void setNombreHotel(Hotel nombreHotel) {
+        this.nombreHotel = nombreHotel;
+    }
+
+    public Cuenta getIdCuenta() {
+        return idCuenta;
+    }
+
+    public void setIdCuenta(Cuenta idCuenta) {
+        this.idCuenta = idCuenta;
+    }
+
+    
 }
 
 
