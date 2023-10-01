@@ -19,16 +19,13 @@ public class Plato {
     private Integer costo;
 
     @OneToMany
-    @JoinColumn(name="nombre_restaurante", referencedColumnName = "id")
+    @JoinColumn(name="nombre_restaurante", referencedColumnName = "nombre")
     private Restaurante restaurante;
-    
-    @OneToMany
-    @JoinColumn(name="nombre_bar", referencedColumnName = "id")
-    private Bar bar;
 
-    public Plato(String nombre, Integer costo){
+    public Plato(String nombre, Integer costo, Restaurante restaunte){
         this.nombre = nombre;
         this.costo = costo;
+        this.restaurante = restaurante;
     }
 
     public Plato()
@@ -58,5 +55,12 @@ public class Plato {
         this.costo = costo;
     }
 
+    public Restaurante getRestaurante() {
+        return restaurante;
+    }
+
+    public void setRestaurante(Restaurante restaurante) {
+        this.restaurante = restaurante;
+    }
     
 }
