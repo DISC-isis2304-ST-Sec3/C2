@@ -1,30 +1,32 @@
 package uniandes.edu.co.proyecto.Modelo;
 
-import java.sql.Date;
-
-import org.hibernate.id.IntegralDataTypeHolder;
-
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 
 @Entity
 @Table(name="hoteles")
 
 public class Hotel {
+    @Id
     private String nombre;
     private String tipo;
     private String ciudad;
     private String pais;
 
-    public Hotel(String nombre, String tipo, String ciudad, String pais)
+    @OneToOne
+    @JoinColumn(name = "internets_id", referencedColumnName = "id")
+    private Internet internets_id;
+
+    public Hotel(String nombre, String tipo, String ciudad, String pais, Internet internets_id)
     {
         this.nombre = nombre;
         this.tipo = tipo;
         this.ciudad = ciudad;
         this.pais = pais;
+        this.internets_id = internets_id;
     }
 
     public Hotel()
@@ -61,5 +63,15 @@ public class Hotel {
     public void setPais(String pais) {
         this.pais = pais;
     }
+
+    public Internet getInternets_id() {
+        return internets_id;
+    }
+
+    public void setInternets_id(Internet internets_id) {
+        this.internets_id = internets_id;
+    }
+
+    
 }
 

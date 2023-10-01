@@ -1,13 +1,12 @@
 package uniandes.edu.co.proyecto.Modelo;
 
 import java.sql.Date;
-
-import org.hibernate.id.IntegralDataTypeHolder;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -22,13 +21,19 @@ public class Salon {
     private Integer costoad;
     private Date tiempolimpieza;
 
-    public Salon(Integer capacidad, Integer costo, Boolean tienecostoad, Integer costoad, Date tiempolimpieza)
+    @ManyToOne
+    @JoinColumn(name = "hotel_nombre", referencedColumnName = "nombre")
+    private Hotel hotel_nombre;
+
+
+    public Salon(Integer capacidad, Integer costo, Boolean tienecostoad, Integer costoad, Date tiempolimpieza, Hotel hotel_nombre)
     {
         this.capacidad = capacidad;
         this.costo = costo;
         this.tienecostoad = tienecostoad;
         this.costoad = costoad;
         this.tiempolimpieza = tiempolimpieza;
+        this.hotel_nombre = hotel_nombre;
     }
 
     public Salon()
@@ -81,8 +86,12 @@ public class Salon {
     public void setTiempolimpieza(Date tiempolimpieza) {
         this.tiempolimpieza = tiempolimpieza;
     }
-    
-    
 
+    public Hotel getHotel_nombre() {
+        return hotel_nombre;
+    }
 
+    public void setHotel_nombre(Hotel hotel_nombre) {
+        this.hotel_nombre = hotel_nombre;
+    }
 }

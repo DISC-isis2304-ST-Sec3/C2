@@ -1,9 +1,9 @@
 package uniandes.edu.co.proyecto.Modelo;
 
-import org.hibernate.id.IntegralDataTypeHolder;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -16,13 +16,19 @@ public class Bar {
     private Integer capacidad;
     private Integer costocargado;
 
-    public Bar(String nombre, String estilo, Integer costo, Integer capacdidad, Integer costocargado)
+    @ManyToOne
+    @JoinColumn(name = "hotel_nombre", referencedColumnName = "nombre")
+    private Hotel hotel_nombre;
+
+
+    public Bar(String nombre, String estilo, Integer costo, Integer capacdidad, Integer costocargado, Hotel hotel_nombre)
     {
         this.nombre = nombre;
         this.estilo = estilo;
         this.costo = costo;
         this.capacidad = capacdidad;
         this.costocargado = costocargado;
+        this.hotel_nombre = hotel_nombre;
     }
 
     public Bar(){
@@ -68,4 +74,13 @@ public class Bar {
     public void setCostocargado(Integer costocargado) {
         this.costocargado = costocargado;
     }
+
+    public Hotel getHotel_nombre() {
+        return hotel_nombre;
+    }
+
+    public void setHotel_nombre(Hotel hotel_nombre) {
+        this.hotel_nombre = hotel_nombre;
+    }
+
 }

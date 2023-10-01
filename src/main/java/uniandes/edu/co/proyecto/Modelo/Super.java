@@ -1,9 +1,10 @@
 package uniandes.edu.co.proyecto.Modelo;
 
-import org.hibernate.id.IntegralDataTypeHolder;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -13,9 +14,14 @@ public class Super {
     private String nombre;
     private Integer consumo;
 
-    public Super(String nombre, Integer consumo){
+    @OneToOne
+    @JoinColumn(name = "hotel_nombre", referencedColumnName = "nombre")
+    private Hotel hotel_nombre;
+
+    public Super(String nombre, Integer consumo, Hotel hotel_nombre){
         this.nombre = nombre;
         this.consumo = consumo;
+        this.hotel_nombre = hotel_nombre;
     }
 
     public Super()
@@ -35,5 +41,13 @@ public class Super {
 
     public void setConsumo(Integer consumo) {
         this.consumo = consumo;
+    }
+
+    public Hotel getHotel_nombre() {
+        return hotel_nombre;
+    }
+
+    public void setHotel_nombre(Hotel hotel_nombre) {
+        this.hotel_nombre = hotel_nombre;
     }
 }

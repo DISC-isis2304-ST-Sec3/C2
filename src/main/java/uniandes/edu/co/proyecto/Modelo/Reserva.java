@@ -2,12 +2,12 @@ package uniandes.edu.co.proyecto.Modelo;
 
 import java.sql.Date;
 
-import org.hibernate.id.IntegralDataTypeHolder;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -20,10 +20,15 @@ public class Reserva {
     private Date fechaentrada;
     private Date fechasalida;
 
-    public Reserva(Integer numpersonas, Date fechaentrada, Date fechasalida){
+    @OneToOne
+    @JoinColumn(name = "cliente_documento", referencedColumnName = "documento")
+    private Cliente cliente_documento;
+
+    public Reserva(Integer numpersonas, Date fechaentrada, Date fechasalida, Cliente cliente_documento){
         this.numpersonas = numpersonas;
         this.fechaentrada = fechaentrada;
         this.fechasalida = fechasalida;
+        this.cliente_documento = cliente_documento;
     }
 
     public Reserva()
@@ -59,5 +64,13 @@ public class Reserva {
 
     public void setFechasalida(Date fechasalida) {
         this.fechasalida = fechasalida;
+    }
+
+    public Cliente getCliente_documento() {
+        return cliente_documento;
+    }
+
+    public void setCliente_documento(Cliente cliente_documento) {
+        this.cliente_documento = cliente_documento;
     }
 }
