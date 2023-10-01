@@ -9,6 +9,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
@@ -21,6 +23,10 @@ public class Reservaservicio {
     private String servicio;
     private String horainicio;
     private String horafin;
+
+    @OneToMany
+    @JoinColumn(name="documento_cliente", referencedColumnName = "id")
+    private Cliente cliente;
 
     public Reservaservicio(Integer habitacion, String servicio, String horainicio, String horafin)
     {

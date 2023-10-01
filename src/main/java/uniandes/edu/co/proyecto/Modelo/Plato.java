@@ -6,6 +6,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 
@@ -17,6 +19,14 @@ public class Plato {
     private Integer id;
     private String nombre;
     private Integer costo;
+
+    @OneToMany
+    @JoinColumn(name="nombre_restaurante", referencedColumnName = "id")
+    private Restaurante restaurante;
+    
+    @OneToMany
+    @JoinColumn(name="nombre_bar", referencedColumnName = "id")
+    private Bar bar;
 
     public Plato(String nombre, Integer costo){
         this.nombre = nombre;

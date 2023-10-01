@@ -6,6 +6,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -16,6 +18,10 @@ public class Cuenta {
     private Integer id;
     private Integer consumo;
     private Integer valor;
+
+    @OneToOne
+    @JoinColumn(name="documento_cliente", referencedColumnName = "id")
+    private Cliente cliente;
 
     public Cuenta(Integer consumo, Integer valor){
         this.consumo = consumo;
