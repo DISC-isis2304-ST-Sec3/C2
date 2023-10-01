@@ -31,10 +31,11 @@ public class Checkout {
         // default constructor
     }
 
-    public Checkout(Date dia, Integer cuentaabierta, Integer cuentatotal, Integer pagocuenta) {
+    public Checkout(Date dia, Integer cuentaabierta, Integer cuentatotal, Integer pagocuenta, Cliente cliente) {
         this.dia = dia;
         this.cuentaabierta = cuentaabierta;
         this.cuentatotal = pagocuenta;
+        this.cliente = cliente;
     }
 
    
