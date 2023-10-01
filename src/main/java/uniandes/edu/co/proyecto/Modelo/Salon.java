@@ -11,7 +11,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="SALONES")
+@Table(name="salones")
 public class Salon {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
