@@ -21,12 +21,12 @@ public class Bar {
     private Hotel hotel_nombre;
 
 
-    public Bar(String nombre, String estilo, Integer costo, Integer capacdidad, Integer costocargado, Hotel hotel_nombre)
+    public Bar(String nombre, String estilo, Integer costo, Integer capacidad, Integer costocargado, Hotel hotel_nombre)
     {
         this.nombre = nombre;
         this.estilo = estilo;
         this.costo = costo;
-        this.capacidad = capacdidad;
+        this.capacidad = capacidad;
         this.costocargado = costocargado;
         this.hotel_nombre = hotel_nombre;
     }
