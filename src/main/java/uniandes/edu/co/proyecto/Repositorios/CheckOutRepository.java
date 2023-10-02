@@ -17,12 +17,12 @@ public interface CheckOutRepository extends JpaRepository<Checkout, String>{
     Collection<Checkout> darCheckouts();
 
     @Query(value = "SELECT * FROM checkouts WHERE id = :id", nativeQuery=true)
-    Checkout darCheckout(@Param("id") String id);
+    Checkout darCheckout(@Param("id") Integer id);
 
     @Modifying
     @Transactional
     @Query(value = "INSERT INTO checkouts (id, dia, cuentaabierta, cuentatotal, pagocuenta, cliente_documento) VALUES(hoteles_sequence.nextval, :id, :dia, ;cuentaabierta, :cuentatotal, :pagocuenta, :cliente_documento)", nativeQuery=true)
-    void insertarCheckout(@Param("id") String id, @Param("dia") Date dia, @Param("cuentaabierta") Integer cuentaabierta, @Param("cuentatotal") Integer cuentatotal, @Param("pagocuenta") Integer pagocuenta, @Param("cliente_documento") Integer cliente_documento);
+    void insertarCheckout(@Param("id") Integer id, @Param("dia") Date dia, @Param("cuentaabierta") Integer cuentaabierta, @Param("cuentatotal") Integer cuentatotal, @Param("pagocuenta") Integer pagocuenta, @Param("cliente_documento") Integer cliente_documento);
 
     @Modifying
     @Transactional
@@ -32,6 +32,6 @@ public interface CheckOutRepository extends JpaRepository<Checkout, String>{
     @Modifying
     @Transactional
     @Query(value = "DELETE FROM checkouts WHERE id = :id", nativeQuery=true)
-    void eliminarCheckout(@Param("id") String id);
+    void eliminarCheckout(@Param("id") Integer id);
 
 }

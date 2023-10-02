@@ -1,7 +1,6 @@
 package uniandes.edu.co.proyecto.Modelo;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
@@ -9,7 +8,6 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name="supers")
 public class Super {
-    @Id
     private String nombre;
     private Integer consumo;
 

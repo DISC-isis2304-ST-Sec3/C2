@@ -18,7 +18,7 @@ public class Piscina {
     private Integer profundidad;
     private String horario;
     @OneToMany
-    @JoinColumn(name="id_hotel", referencedColumnName = "id")
+    @JoinColumn(name="nombre_hotel", referencedColumnName = "nombre")
     private Hotel nombre_hotel;
 
     public Piscina(Integer capacidad, Integer profundidad, String horario, Hotel nombre_hotel){
