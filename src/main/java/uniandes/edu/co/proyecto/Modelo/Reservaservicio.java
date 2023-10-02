@@ -29,7 +29,7 @@ public class Reservaservicio {
         this.servicio = servicio;
         this.horainicio = horainicio;
         this.horafin = horafin;
-        this.cliente = cliente;
+        this.documento_cliente = cliente;
     }
 
     public Reservaservicio()
