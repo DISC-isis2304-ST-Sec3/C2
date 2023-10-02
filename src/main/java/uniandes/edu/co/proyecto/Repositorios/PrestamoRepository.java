@@ -14,7 +14,7 @@ public interface PrestamoRepository extends JpaRepository<Prestamo, String>{
     Collection<Prestamo> darPrestamos();
 
     @Query(value = "SELECT * FROM prestamos WHERE id = :id", nativeQuery=true)
-    Prestamo darPrestamo(@Param("id") String id);
+    Prestamo darPrestamo(@Param("id") Integer id);
 
     @Modifying
     @Transactional
@@ -29,6 +29,6 @@ public interface PrestamoRepository extends JpaRepository<Prestamo, String>{
     @Modifying
     @Transactional
     @Query(value = "DELETE FROM prestamos WHERE id = :id", nativeQuery=true)
-    void eliminarPrestamo(@Param("id") String id);
+    void eliminarPrestamo(@Param("id") Integer id);
     
 }
