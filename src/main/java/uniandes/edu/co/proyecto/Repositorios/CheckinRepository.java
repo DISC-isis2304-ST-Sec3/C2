@@ -21,15 +21,15 @@ public interface CheckinRepository extends JpaRepository<Checkin, Integer>{
     @Modifying
     @Transactional
     @Query(value = "INSERT INTO checkins (id, documentocliente, dia, realizadopor, cuentaabierta, documentoCliente, documentoEmpleado) VALUES(hoteles_sequence.nextval, :id, :documentocliente, :dia, :realizadopor, :cuentaabierta, :documentoCliente, :documentoEmpleado)", nativeQuery=true)
-    void insertarCheckin(@Param("id") Integer id, @Param("documentocliente") Integer documentocliente, @Param("dia") Date dia, @Param("realizadopor") String realizadopor, @Param("cuentaabierta") Integer cuentaabierta, @Param("documentoCliente") String documentoCliente, @Param("documentoEmpleado") Integer documentoEmpleado);
+    void insertarCheckin(@Param("id") Integer id, @Param("documentocliente") Integer documentocliente, @Param("dia") Date dia, @Param("realizadopor") String realizadopor, @Param("cuentaabierta") Integer cuentaabierta, @Param("documentoCliente") Integer documentoCliente, @Param("documentoEmpleado") Integer documentoEmpleado);
     
     @Modifying
     @Transactional
     @Query(value = "UPDATE checkins SET documentocliente = :documentocliente, dia = :dia, realizadopor = :realizadopor, cuentaabierta = :cuentaabierta, documentoCliente = :documentoCliente, documentoEmpleado = :documentoEmpleado WHERE id=:id", nativeQuery = true)
-    void actualizarBar(@Param("documentocliente") Integer documentocliente, @Param("dia") Date dia, @Param("realizadopor") String realizadopor, @Param("cuentaabierta") Integer cuentaabierta, @Param("documentoCliente") Integer documentoCliente, @Param("documentoEmpleado") Integer documentoEmpleado);
+    void actualizarCheckin(@Param("documentocliente") Integer documentocliente, @Param("dia") Date dia, @Param("realizadopor") String realizadopor, @Param("cuentaabierta") Integer cuentaabierta, @Param("documentoCliente") Integer documentoCliente, @Param("documentoEmpleado") Integer documentoEmpleado);
 
     @Modifying
     @Transactional
     @Query(value = "DELETE FROM checkins WHERE documentocliente = :documentocliente)", nativeQuery=true)
-    void eliminarCheckin(@Param("documentocliente") Integer documentocliente, @Param("dia") Date dia, @Param("realizadopor") String realizadopor, @Param("cuentaabierta") Integer cuentaabierta, @Param("documentoCliente") String documentoCliente);
+    void eliminarCheckin(@Param("id") Integer id);
 }
