@@ -26,7 +26,7 @@ public interface AcompañanteRepository extends JpaRepository<Acompañante, Stri
     @Modifying
     @Transactional
     @Query(value = "Update INTO acompañantes (idacompañante, documento_cliente) WHERE idacompañante =: idacompañante", nativeQuery=true)
-    void actualiarAcompañante( @Param("documento_cliente") int documento_cliente);
+    void actualizarAcompañante( @Param("documento_cliente") int documento_cliente);
 
 
     @Modifying
