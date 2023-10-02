@@ -20,8 +20,8 @@ public class Reservaservicio {
     private String horafin;
 
     @OneToMany
-    @JoinColumn(name="documento_cliente", referencedColumnName = "id")
-    private Cliente cliente;
+    @JoinColumn(name="documento_cliente", referencedColumnName = "documento")
+    private Cliente documento_cliente;
 
     public Reservaservicio(Integer habitacion, String servicio, String horainicio, String horafin)
     {
@@ -29,6 +29,7 @@ public class Reservaservicio {
         this.servicio = servicio;
         this.horainicio = horainicio;
         this.horafin = horafin;
+        this.documento_cliente = documento_cliente;
     }
 
     public Reservaservicio()
@@ -72,6 +73,14 @@ public class Reservaservicio {
 
     public void setHorafin(String horafin) {
         this.horafin = horafin;
+    }
+
+    public Cliente getDocumento_cliente() {
+        return documento_cliente;
+    }
+
+    public void setDocumento_cliente(Cliente documento_cliente) {
+        this.documento_cliente = documento_cliente;
     }
 
 }
