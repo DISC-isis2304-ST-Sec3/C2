@@ -10,7 +10,6 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.transaction.annotation.Transactional;
 
 import uniandes.edu.co.proyecto.Modelo.Checkin;
-import uniandes.edu.co.proyecto.Modelo.Empleado;
 
 public interface CheckinRepository extends JpaRepository<Checkin, Integer>{
     @Query(value = "SELECT * FROM checkins", nativeQuery=true)
@@ -22,7 +21,7 @@ public interface CheckinRepository extends JpaRepository<Checkin, Integer>{
     @Modifying
     @Transactional
     @Query(value = "INSERT INTO checkins (id, documentocliente, dia, realizadopor, cuentaabierta, documentoCliente, documentoEmpleado) VALUES(hoteles_sequence.nextval, :id, :documentocliente, :dia, :realizadopor, :cuentaabierta, :documentoCliente, :documentoEmpleado)", nativeQuery=true)
-    void insertarCheckin(@Param("id") Integer id, @Param("documentocliente") Integer documentocliente, @Param("dia") Date dia, @Param("realizadopor") String realizadopor, @Param("cuentaabierta") Integer cuentaabierta, @Param("documentoCliente") String documentoCliente, @Param("documentoEmpleado") Empleado documentoEmpleado);
+    void insertarCheckin(@Param("id") Integer id, @Param("documentocliente") Integer documentocliente, @Param("dia") Date dia, @Param("realizadopor") String realizadopor, @Param("cuentaabierta") Integer cuentaabierta, @Param("documentoCliente") String documentoCliente, @Param("documentoEmpleado") Integer documentoEmpleado);
     
     @Modifying
     @Transactional
