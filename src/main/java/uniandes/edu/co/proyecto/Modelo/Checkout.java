@@ -25,12 +25,6 @@ public class Checkout {
     @JoinColumn(name="documento_cliente", referencedColumnName = "id")
     private Cliente cliente;
 
-    
-    public Checkout() {
-        ;
-        // default constructor
-    }
-
     public Checkout(Date dia, Integer cuentaabierta, Integer cuentatotal, Integer pagocuenta, Cliente cliente) {
         this.dia = dia;
         this.cuentaabierta = cuentaabierta;
@@ -38,6 +32,9 @@ public class Checkout {
         this.cliente = cliente;
     }
 
+    public Checkout(){
+        ;
+    }
    
 
     public Integer getId() {
@@ -78,6 +75,14 @@ public class Checkout {
 
     public void setPagocuenta(Integer pagocuenta) {
         this.pagocuenta = pagocuenta;
+    }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
     }
 
 }
