@@ -5,7 +5,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -19,16 +19,17 @@ public class Reservaservicio {
     private String horainicio;
     private String horafin;
 
-    @OneToMany
+    @ManyToOne
     @JoinColumn(name="documento_cliente", referencedColumnName = "id")
     private Cliente cliente;
 
-    public Reservaservicio(Integer habitacion, String servicio, String horainicio, String horafin)
+    public Reservaservicio(Integer habitacion, String servicio, String horainicio, String horafin, Cliente cliente)
     {
         this.habitacion = habitacion;
         this.servicio = servicio;
         this.horainicio = horainicio;
         this.horafin = horafin;
+        this.cliente = cliente;
     }
 
     public Reservaservicio()
@@ -72,6 +73,15 @@ public class Reservaservicio {
 
     public void setHorafin(String horafin) {
         this.horafin = horafin;
+    }
+
+    
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
     }
 
 }

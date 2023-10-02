@@ -22,11 +22,13 @@ public class Internet {
     @JoinColumn(name="id_hotel", referencedColumnName = "id")
     private Hotel hotel;
 
-    public Internet(Integer costo, Integer capacidad)
+    public Internet(Integer costo, Integer capacidad, Hotel hotel)
     {
         this.costo = costo;
         this.capacidad = capacidad;
+        this.hotel = hotel;
     }
+    
 
     public Internet()
     {;}
@@ -53,6 +55,16 @@ public class Internet {
 
     public void setCapacidad(Integer capacidad) {
         this.capacidad = capacidad;
+    }
+
+
+    public void setHotel(Hotel hotel) {
+        this.hotel = hotel;
+    }
+
+
+    public Hotel getHotel() {
+        return hotel;
     }
     
 }

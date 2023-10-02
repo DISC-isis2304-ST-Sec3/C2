@@ -5,7 +5,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 
@@ -18,14 +18,14 @@ public class Plato {
     private String nombre;
     private Integer costo;
 
-    @OneToMany
+    @ManyToOne
     @JoinColumn(name="nombre_restaurante", referencedColumnName = "nombre")
-    private Restaurante restaurante;
+    private Restaurante nombre_restaurante;
 
-    public Plato(String nombre, Integer costo, Restaurante restaunte){
+    public Plato(String nombre, Integer costo, Restaurante nombre_restaurante){
         this.nombre = nombre;
         this.costo = costo;
-        this.restaurante = restaurante;
+        this.nombre_restaurante = nombre_restaurante;
     }
 
     public Plato()
@@ -56,11 +56,11 @@ public class Plato {
     }
 
     public Restaurante getRestaurante() {
-        return restaurante;
+        return nombre_restaurante;
     }
 
-    public void setRestaurante(Restaurante restaurante) {
-        this.restaurante = restaurante;
+    public void setRestaurante(Restaurante nombre_restaurante) {
+        this.nombre_restaurante = nombre_restaurante;
     }
     
 }

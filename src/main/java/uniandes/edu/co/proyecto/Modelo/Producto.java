@@ -5,7 +5,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -17,13 +17,14 @@ public class Producto {
     private String nombre;
     private Integer precio;
 
-    @OneToMany
+    @ManyToOne
     @JoinColumn(name="id_super", referencedColumnName = "id")
     private Super supermercado;
 
-    public Producto(String nombre, Integer precio){
+    public Producto(String nombre, Integer precio, Super supermercado){
         this.nombre = nombre;
         this.precio = precio;
+        this.supermercado = supermercado;
     }
 
     public Producto()
@@ -52,4 +53,14 @@ public class Producto {
     public void setPrecio(Integer precio) {
         this.precio = precio;
     }
+
+    public Super getSupermercado() {
+        return supermercado;
+    }
+
+    public void setSupermercado(Super supermercado) {
+        this.supermercado = supermercado;
+    }
+
+    
 }

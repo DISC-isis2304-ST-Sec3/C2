@@ -19,12 +19,13 @@ public class Piscina {
     private String horario;
     @OneToMany
     @JoinColumn(name="id_hotel", referencedColumnName = "id")
-    private Hotel hotel;
+    private Hotel nombre_hotel;
 
-    public Piscina(Integer capacidad, Integer profundidad, String horario){
+    public Piscina(Integer capacidad, Integer profundidad, String horario, Hotel nombre_hotel){
         this.capacidad = capacidad;
         this.profundidad = profundidad;
         this.horario = horario;
+        this.nombre_hotel = nombre_hotel;
     }
 
     public Piscina()
@@ -60,6 +61,14 @@ public class Piscina {
 
     public void setHorario(String horario) {
         this.horario = horario;
+    }
+
+    public Hotel getNombre_hotel() {
+        return nombre_hotel;
+    }
+
+    public void setNombre_hotel(Hotel nombre_hotel) {
+        this.nombre_hotel = nombre_hotel;
     }
 
 }
