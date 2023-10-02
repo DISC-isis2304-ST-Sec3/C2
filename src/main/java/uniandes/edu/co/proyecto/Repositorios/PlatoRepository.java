@@ -8,7 +8,6 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.transaction.annotation.Transactional;
 
-import uniandes.edu.co.proyecto.Modelo.Habitacion;
 import uniandes.edu.co.proyecto.Modelo.Plato;
 
 public interface PlatoRepository extends JpaRepository<Plato, Integer>{
