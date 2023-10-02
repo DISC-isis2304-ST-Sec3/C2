@@ -26,8 +26,8 @@ public interface EmpleadoRepository extends JpaRepository<Empleado, String> {
 
     @Modifying
     @Transactional
-    @Query(value = "UPDATE empleados SET documento = :documento, nombre = :nombre, apellido = :apellido, edad = :edad, cargo = :cargo, salario = :salario, hotel_nombre =:hotel_nombre  WHERE documento=:documento", nativeQuery = true)
-    void actualizarEmpleado(@Param("documento") int documento, @Param("nombre") String nombre, @Param("apellido") String apellido, @Param("edad") Integer edad, @Param("cargo") String cargo, @Param("salario") Integer salario,  @Param("hotel_nombre") String hotel_nombre);
+    @Query(value = "UPDATE empleados SET nombre = :nombre, apellido = :apellido, edad = :edad, cargo = :cargo, salario = :salario, hotel_nombre =:hotel_nombre  WHERE documento=:documento", nativeQuery = true)
+    void actualizarEmpleado( @Param("nombre") String nombre, @Param("apellido") String apellido, @Param("edad") Integer edad, @Param("cargo") String cargo, @Param("salario") Integer salario,  @Param("hotel_nombre") String hotel_nombre);
 
     @Modifying
     @Transactional

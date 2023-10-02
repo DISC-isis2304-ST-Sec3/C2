@@ -16,7 +16,7 @@ public interface InternetRepository extends JpaRepository<Internet, String>{
     Collection<Internet> darInternet();
 
     @Query(value = "SELECT * FROM internets WHERE id = :id", nativeQuery=true)
-    Internet darInternet(@Param("id") String id);
+    Internet darInternet(@Param("id") Integer id);
 
     @Modifying
     @Transactional
@@ -31,5 +31,5 @@ public interface InternetRepository extends JpaRepository<Internet, String>{
     @Modifying
     @Transactional
     @Query(value = "DELETE FROM internets WHERE id = :id", nativeQuery=true)
-    void eliminarInternet(@Param("id") String id);    
+    void eliminarInternet(@Param("id") Integer id);    
 }

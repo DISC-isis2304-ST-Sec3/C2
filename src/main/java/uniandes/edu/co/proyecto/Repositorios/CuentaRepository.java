@@ -20,12 +20,12 @@ public interface CuentaRepository extends JpaRepository<Cuenta, Integer>{
     @Modifying
     @Transactional
     @Query(value = "INSERT INTO cuentas (id, consumo, valor, cliente) VALUES(hoteles_sequence.nextval, :id, :consumo, :valor, :cliente)", nativeQuery=true)
-    void insertarCuenta(@Param("id") Integer id, @Param("consumo") Integer consumo, @Param("valor") Integer valor, @Param("cliente") String cliente);
+    void insertarCuenta(@Param("id") Integer id, @Param("consumo") Integer consumo, @Param("valor") Integer valor, @Param("cliente") Integer cliente);
 
     @Modifying
     @Transactional
-    @Query(value = "UPDATE cuentas SET id = :id, consumo = :consumo, valor = :valor, cliente = :cliente WHERE id=:id", nativeQuery = true)
-    void actualizarCuenta(@Param("id") Integer id, @Param("consumo") Integer consumo, @Param("valor") Integer valor, @Param("cliente") String cliente);
+    @Query(value = "UPDATE cuentas SET consumo = :consumo, valor = :valor, cliente = :cliente WHERE id=:id", nativeQuery = true)
+    void actualizarCuenta(@Param("consumo") Integer consumo, @Param("valor") Integer valor, @Param("cliente") Integer cliente);
 
     @Modifying
     @Transactional

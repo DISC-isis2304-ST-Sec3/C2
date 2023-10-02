@@ -31,4 +31,13 @@ public class Acompañante {
     public void setIdacompañante(Integer idacompañante) {
         this.idacompañante = idacompañante;
     }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
+    
 }
