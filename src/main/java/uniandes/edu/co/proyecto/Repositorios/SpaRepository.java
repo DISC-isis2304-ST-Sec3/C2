@@ -30,6 +30,6 @@ public interface SpaRepository extends JpaRepository<Spa, Integer> {
     @Modifying
     @Transactional
     @Query(value = "DELETE FROM spas WHERE id = :id)", nativeQuery=true)
-    void eliminarSpa(@Param("id") Integer id, @Param("duracion") Integer duracion, @Param("costo") Integer costo, @Param("consumo") Integer consumo, @Param("horario") String horario, @Param("nombre_hotel") String nombre_hotel);
+    void eliminarSpa(@Param("id") Integer id);
     
 }

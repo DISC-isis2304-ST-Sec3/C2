@@ -8,6 +8,7 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.transaction.annotation.Transactional;
 
 import uniandes.edu.co.proyecto.Modelo.Comodidad;
+import uniandes.edu.co.proyecto.Modelo.ComodidadPK;
 
 
 public interface ComodidadRepository extends JpaRepository<Comodidad, String>{
@@ -16,12 +17,12 @@ public interface ComodidadRepository extends JpaRepository<Comodidad, String>{
     Collection<Comodidad> darComodidades();
 
     @Query(value = "SELECT * FROM comodidades WHERE nombre = :nombre", nativeQuery=true)
-    Comodidad darComodidad(@Param("pk") int pk);
+    Comodidad darComodidad(@Param("pk") ComodidadPK pk);
 
     @Modifying
     @Transactional
     @Query(value = "INSERT INTO comodidades (pk, comodidad) VALUES(hoteles_sequence.nextval, :pk, :comodidad)", nativeQuery=true)
-    void insertarComodidad(@Param("pk") String pk, @Param("comodidad") String comodidad);
+    void insertarComodidad(@Param("pk") ComodidadPK pk, @Param("comodidad") String comodidad);
     
     @Modifying
     @Transactional
@@ -31,6 +32,6 @@ public interface ComodidadRepository extends JpaRepository<Comodidad, String>{
     @Modifying
     @Transactional
     @Query(value = "DELETE FROM comodidades WHERE pk = :pk", nativeQuery=true)
-    void eliminarBar(@Param("pk") String pk);
+    void eliminarComodidad(@Param("pk") ComodidadPK pk);
     
 }

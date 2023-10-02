@@ -25,7 +25,7 @@ public interface HabitacionRepository extends JpaRepository<Habitacion, Integer>
     @Modifying
     @Transactional
     @Query(value = "UPDATE habitaciones SET tipo = :tipo, capacidad = :capacidad, precio = :precio, consumo = :consumo, nombreHotel = :nombreHotel WHERE id = :id", nativeQuery = true)
-    void actualizarHabitacion(@Param("tipo") String tipo, @Param("capacidad") Integer capacidad, @Param("precio") Integer precio, @Param("consumo") Integer consumo, @Param("nombreHotel") Integer nombreHotel);
+    void actualizarHabitacion(@Param("tipo") String tipo, @Param("capacidad") Integer capacidad, @Param("precio") Integer precio, @Param("consumo") Integer consumo, @Param("nombreHotel") String nombreHotel);
 
     @Modifying
     @Transactional

@@ -31,6 +31,6 @@ public interface PlanconsumoRepositry extends JpaRepository<Planconsumo, Integer
     @Modifying
     @Transactional
     @Query(value = "DELETE FROM planesconsumo WHERE id = :id", nativeQuery=true)
-    void eliminarPlanconsumo(@Param("id") String id);
+    void eliminarPlanconsumo(@Param("id") Integer id);
     
 }

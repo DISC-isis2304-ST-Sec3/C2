@@ -16,20 +16,20 @@ public interface SalonRepository  extends JpaRepository<Salon, String>{
     Collection<Salon> darSalones();
 
     @Query(value = "SELECT * FROM salones WHERE id = :id", nativeQuery=true)
-    Salon darSalon(@Param("id") String id);
+    Salon darSalon(@Param("id") Integer id);
 
     @Modifying
     @Transactional
     @Query(value = "INSERT INTO salones (id, estilo, costo, capacidad, hotel_nombre) VALUES(hoteles_sequence.nextval, :id, :esilo, :costo, :capacidad, :costoadicional, :costoad :hotel_nombre)", nativeQuery=true)
-    void insertarSalon(@Param("id") String id, @Param("estilo") String estilo, @Param("costo") Integer costo, @Param("capacidad") Integer capacidad, @Param("costoadicional") Boolean costoadicional, @Param("costoad") Integer costoad,@Param("hotel_nombre") String hotel_nombre);
+    void insertarSalon(@Param("id") Integer id,  @Param("costo") Integer costo, @Param("capacidad") Integer capacidad, @Param("costoadicional") Boolean costoadicional, @Param("costoad") Integer costoad,@Param("hotel_nombre") String hotel_nombre);
 
     @Modifying
     @Transactional
     @Query(value = "UPDATE salones SET estilo = :estilo, costo = :costo, capacidad = :capacidad, costoadicional = :costoadicional, costoad = :costoad, hotel_nombre = :hotel_nombre WHERE id=:id", nativeQuery = true)
-    void actualizarSalon(@Param("estilo") String estilo, @Param("costo") Integer costo, @Param("capacidad") Integer capacidad, @Param("costoadicional") Boolean costoadicional, @Param("costoad") Integer costoad,@Param("hotel_nombre") String hotel_nombre);
+    void actualizarSalon(@Param("costo") Integer costo, @Param("capacidad") Integer capacidad, @Param("costoadicional") Boolean costoadicional, @Param("costoad") Integer costoad,@Param("hotel_nombre") String hotel_nombre);
 
     @Modifying
     @Transactional
     @Query(value = "DELETE FROM salones WHERE id = :id", nativeQuery=true)
-    void eliminarSalon(@Param("id") String id);
+    void eliminarSalon(@Param("id") Integer id);
 }
