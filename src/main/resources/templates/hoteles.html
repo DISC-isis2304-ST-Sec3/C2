@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoteles</title>
+    <link rel="stlyesheet" type="text/css" th:href="@{/css/bootstrap.min.css}"
+</head>
+<body>
+    <div>
+        <h1>Lista de Hoteles</h1>
+        <table class="table table-hover table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Tipo</th>
+                    <th>Ciudad</th>
+                    <th>Pais</th>
+                </tr>
+            </thead>
+            <th:block th:each="hotel:${hoteles}">
+                <tr>
+                    <td th:text="${hotel.nombre}"></td>
+                    <td th:text="${hotel.tipo}"></td>
+                    <td th:text="${hotel.ciudad}"></td>
+                    <td th:text="${hotel.pais}"></td>
+                    <td>
+                        <a th:href="@{hoteles/{nombre}/edit(nombre=${hotel.nombre})}">
+                            Editar
+                        </a>
+                        <a th:href="@{hoteles/{nombre}/delete(id=${hotel.nombre})}"
+                        onclick="return confirm('¿Estás seguro de borrar este hotel?')">
+                            Borrar
+                        </a>
+                    </td>
+                </tr>
+            </th:block>
+        </table>
+        <div>
+            <a th:href="@{/}" class="btn btn-primary">Volver Atrás</a>
+        </div>
+    </div>
+</body>
+</html>
