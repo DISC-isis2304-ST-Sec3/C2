@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planes de Consumo</title>
+    <link rel="stlyesheet" type="text/css" th:href="@{/css/bootstrap.min.css}"
+</head>
+<body>
+    <div>
+        <h1>Lista de Planes de Consumo</h1>
+        <table class="table table-hover table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Id</th>
+                    <th>Tiempo</th>
+                    <th>Tipo</th>
+                    <th>Precio</th>
+                    <th>Promocion</th>
+                    <th>Beneficio</th>
+                </tr>
+            </thead>
+            <th:block th:each="planconsumo:${planesconsumo}">
+                <tr>
+                    <td th:text="${planconsumo.id}"></td>
+                    <td th:text="${planconsumo.tiempo}"></td>
+                    <td th:text="${planconsumo.tipo}"></td>
+                    <td th:text="${planconsumo.precio}"></td>
+                    <td th:text="${planconsumo.promocion}"></td>
+                    <td th:text="${planconsumo.beneficio}"></td>
+                    <td>
+                        <a th:href="@{planesconsumo/{id}/edit(id=${planconsumo.id})}">
+                            Editar
+                        </a>
+                        <a th:href="@{planesconsumo/{id}/delete(id=${planconsumo.id})}"
+                        onclick="return confirm('¿Estás seguro de borrar este plan de consumo?')">
+                            Borrar
+                        </a>
+                    </td>
+                </tr>
+            </th:block>
+        </table>
+        <div>
+            <a th:href="@{/}" class="btn btn-primary">Volver Atrás</a>
+        </div>
+    </div>
+</body>
+</html>

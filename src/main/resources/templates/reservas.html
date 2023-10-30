@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+    <link rel="stlyesheet" type="text/css" th:href="@{/css/bootstrap.min.css}"
+</head>
+<body>
+    <div>
+        <h1>Reservas</h1>
+        <table class="table table-hover table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Id</th>
+                    <th>Número de Personas</th>
+                    <th>Fecha Entrada</th>
+                    <th>Fecha Salida</th>
+                </tr>
+            </thead>
+            <th:block th:each="reserva:${reservas}">
+                <tr>
+                    <td th:text="${reserva.id}"></td>
+                    <td th:text="${reserva.numpersonas}"></td>
+                    <td th:text="${reserva.tipo}"></td>
+                    <td th:text="${reserva.precio}"></td>
+                    <td th:text="${reserva.promocion}"></td>
+                    <td th:text="${reserva.beneficio}"></td>
+                    <td>
+                        <a th:href="@{reservas/{id}/edit(id=${reserva.id})}">
+                            Editar
+                        </a>
+                        <a th:href="@{reservas/{id}/delete(id=${reserva.id})}"
+                        onclick="return confirm('¿Estás seguro de borrar esta reserva?')">
+                            Borrar
+                        </a>
+                    </td>
+                </tr>
+            </th:block>
+        </table>
+        <div>
+            <a th:href="@{/}" class="btn btn-primary">Volver Atrás</a>
+        </div>
+    </div>
+</body>
+</html>
