@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Outs</title>
+    <link rel="stlyesheet" type="text/css" th:href="@{/css/bootstrap.min.css}"
+</head>
+<body>
+    <div>
+        <h1>Lista de Check Outs</h1>
+        <table class="table table-hover table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Id</th>
+                    <th>Día</th>
+                    <th>Cuenta Abierta</th>
+                    <th>Cuenta Total</th>
+                    <th>Pago de la Cuenta</th>
+                </tr>
+            </thead>
+            <th:block th:each="checkout:${checkouts}">
+                <tr>
+                    <td th:text="${checkout.id}"></td>
+                    <td th:text="${checkout.dia}"></td>
+                    <td th:text="${checkout.cuentaabierta}"></td>
+                    <td th:text="${checkout.cuentatotal}"></td>
+                    <td th:text="${checkout.pagocuenta}"></td>
+                    <td>
+                        <a th:href="@{checkouts/{id}/edit(id=${checkout.id})}">
+                            Editar
+                        </a>
+                        <a th:href="@{checkouts/{id}/delete(id=${checkout.id})}"
+                        onclick="return confirm('¿Estás seguro de borrar este check out?')">
+                            Borrar
+                        </a>
+                    </td>
+                </tr>
+            </th:block>
+        </table>
+        <div>
+            <a th:href="@{/}" class="btn btn-primary">Volver Atrás</a>
+        </div>
+    </div>
+</body>
+</html>
