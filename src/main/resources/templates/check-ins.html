@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Ins</title>
+    <link rel="stlyesheet" type="text/css" th:href="@{/css/bootstrap.min.css}"
+</head>
+<body>
+    <div>
+        <h1>Lista de Check Ins</h1>
+        <table class="table table-hover table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Id</th>
+                    <th>Día</th>
+                    <th>Cuenta Abierta</th>
+                    <th>Cuenta Total</th>
+                    <th>Pago de la Cuenta</th>
+                </tr>
+            </thead>
+            <th:block th:each="checkin:${checkins}">
+                <tr>
+                    <td th:text="${checkin.id}"></td>
+                    <td th:text="${checkin.dia}"></td>
+                    <td th:text="${checkin.cuentaabierta}"></td>
+                    <td th:text="${checkin.cuentatotal}"></td>
+                    <td th:text="${checkin.pagocuenta}"></td>
+                    <td>
+                        <a th:href="@{checkins/{id}/edit(id=${checkin.id})}">
+                            Editar
+                        </a>
+                        <a th:href="@{checkins/{id}/delete(id=${checkin.id})}"
+                        onclick="return confirm('¿Estás seguro de borrar este check in?')">
+                            Borrar
+                        </a>
+                    </td>
+                </tr>
+            </th:block>
+        </table>
+        <div>
+            <a th:href="@{/}" class="btn btn-primary">Volver Atrás</a>
+        </div>
+    </div>
+</body>
+</html>
