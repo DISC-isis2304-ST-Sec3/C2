@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Hotel</title>
+    <link rel="stlyesheet" type="text/css" th:href="@{/css/bootstrap.min.css}"/>
+
+</head>
+<body>
+   <form th:action="@{'/hoteles/'+${id}+'/edit/save'}" th:object="${hotel}" 
+   metho="post">
+   <div th:replace="~{fragments/hotelForm :: hotelForm(titulo='Editar hotel', hotel=${hotel})}">
+    
+   </div>
+</form>
+  
+
+</body>
+</html>
