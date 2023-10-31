@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fragmento</title>
+    <link rel="stlyesheet" type="text/css" th:href="@{/css/bootstrap.min.css}"/>
+</head>
+<body>
+    <div th:fragment="checkoutForm(titulo)" class="container border border-2 w-25">
+        <h1 class="text-center" ht:text="${titulo}"></h1>
+        <form>
+            <label class="col-form-label">ID</label>
+            <input class="form-control" type="text" id="ID"
+            name="ID" required th:value="${checkout.ID}"/>
+            <label class="col-form-label">Dia</label>
+            <input class="form-control" type="text" id="dia"
+            name="dia" required th:value="${checkout.dia}"/>
+            <label class="col-form-label">Cuenta Abierta</label>
+            <select class="form-control" id="cuentaabierta"
+            name="cuentaabierta" required>
+                <option value="Abierta" th:selected="${checkout.cuentaabierta eq 1}">
+                    Abierta
+                </option>
+                <option value="Cerrada" th:selected="${checkout.cuentaabierta eq 0}">
+                    Cerrada
+                </option>
+            </select>
+        <label class="col-form-label">Valor total de la cuenta</label>
+        <input class="form-control" type="String" id="cuentatotal"
+        name="cuentatotal" required th:valued="${checkout.cuentatotal}"/><br>
+        <label class="col-form-label">Pago de la Cuenta</label>
+        <input class="form-control" type="String" id="pagocuenta"
+        name="pagocuenta" required th:valued="${checkout.pagocuenta}"/><br>
+        <div class="text-center">
+            <input type="submit" value="Guardar" class="btn btn-primary"/>
+            <a th:href="@{/checkouts}" class="btn btn-primary">Cancelar</a>
+        </div>
+        </form>
+    </div>
+   
+</body>
+</html>

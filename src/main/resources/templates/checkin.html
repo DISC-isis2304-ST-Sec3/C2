@@ -14,18 +14,18 @@
                 <tr>
                     <th>Id</th>
                     <th>Día</th>
+                    <th>Documento del Cliente</th>
                     <th>Cuenta Abierta</th>
-                    <th>Cuenta Total</th>
-                    <th>Pago de la Cuenta</th>
+                    <th>Realizado por</th>
                 </tr>
             </thead>
             <th:block th:each="checkin:${checkins}">
                 <tr>
                     <td th:text="${checkin.id}"></td>
                     <td th:text="${checkin.dia}"></td>
+                    <td th:text="${checkin.documentocliente}"></td>
                     <td th:text="${checkin.cuentaabierta}"></td>
-                    <td th:text="${checkin.cuentatotal}"></td>
-                    <td th:text="${checkin.pagocuenta}"></td>
+                    <td th:text="${checkin.realizadopor}"></td>
                     <td>
                         <a th:href="@{checkins/{id}/edit(id=${checkin.id})}">
                             Editar

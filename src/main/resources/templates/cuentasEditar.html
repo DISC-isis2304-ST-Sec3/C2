@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Cuenta</title>
+    <link rel="stlyesheet" type="text/css" th:href="@{/css/bootstrap.min.css}"/>
+
+</head>
+<body>
+   <form th:action="@{'/cuentas/'+${id}+'/edit/save'}" th:object="${cuenta}" 
+   metho="post">
+   <div th:replace="~{fragments/cuentaForm :: cuentaForm(titulo='Editar Cuenta', cuenta=${cuenta})}">
+    
+   </div>
+</form>
+  
+
+</body>
+</html>
