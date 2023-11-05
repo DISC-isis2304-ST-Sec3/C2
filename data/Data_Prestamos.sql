@@ -1,0 +1,10 @@
+insert into prestamos (id, devuelto, malestado, hoteles_nombre, cuentas_id) values (1, true, false, 'Grand Hotel', 1);
+insert into prestamos (id, devuelto, malestado, hoteles_nombre, cuentas_id) values (2, true, true, 'Sunset Resort', 2);
+insert into prestamos (id, devuelto, malestado, hoteles_nombre, cuentas_id) values (3, true, false, 'Ocean View Inn', 3);
+insert into prestamos (id, devuelto, malestado, hoteles_nombre, cuentas_id) values (4, true, false, 'Mountain Lodge', 4);
+insert into prestamos (id, devuelto, malestado, hoteles_nombre, cuentas_id) values (5, false, true, 'Palm Paradise Hotel', 5);
+insert into prestamos (id, devuelto, malestado, hoteles_nombre, cuentas_id) values (6, true, false, 'Grand Hotel', 6);
+insert into prestamos (id, devuelto, malestado, hoteles_nombre, cuentas_id) values (7, true, false, 'Sunset Resort', 7);
+insert into prestamos (id, devuelto, malestado, hoteles_nombre, cuentas_id) values (8, true, false, 'Ocean View Inn', 8);
+insert into prestamos (id, devuelto, malestado, hoteles_nombre, cuentas_id) values (9, true, false, 'Mountain Lodge', 9);
+insert into prestamos (id, devuelto, malestado, hoteles_nombre, cuentas_id) values (10, false, false, 'Palm Paradise Hotel', 10);

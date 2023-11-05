@@ -1,0 +1,10 @@
+insert into cuentas (id, consumo, valor, clientes_documento) values (1, 807384, 683666, 0201049731);
+insert into cuentas (id, consumo, valor, clientes_documento) values (2, 511196, 142978, 0381781345);
+insert into cuentas (id, consumo, valor, clientes_documento) values (3, 874353, 209971, 0765504776);
+insert into cuentas (id, consumo, valor, clientes_documento) values (4, 925068, 833007, 9158975917);
+insert into cuentas (id, consumo, valor, clientes_documento) values (5, 942303, 442609, 7152193510);
+insert into cuentas (id, consumo, valor, clientes_documento) values (6, 757950, 519694, 0186586184);
+insert into cuentas (id, consumo, valor, clientes_documento) values (7, 649674, 483397, 3668936489);
+insert into cuentas (id, consumo, valor, clientes_documento) values (8, 948137, 274125, 6609864540);
+insert into cuentas (id, consumo, valor, clientes_documento) values (9, 245136, 203528, 3116710467);
+insert into cuentas (id, consumo, valor, clientes_documento) values (10, 934857, 309008, 5989046728);

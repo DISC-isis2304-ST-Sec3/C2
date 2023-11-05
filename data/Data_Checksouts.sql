@@ -1,0 +1,10 @@
+insert into checksouts (id, dia, cuentaabierta, cuentatotal, pagocuenta, clientes_documento, empleados_documento) values (1, '31/01/2023', true, '$990134.65', true, '2380469756', '8372821425');
+insert into checksouts (id, dia, cuentaabierta, cuentatotal, pagocuenta, clientes_documento, empleados_documento) values (2, '21/07/2023', false, '$223142.18', true, '3636525557', '0765847949');
+insert into checksouts (id, dia, cuentaabierta, cuentatotal, pagocuenta, clientes_documento, empleados_documento) values (3, '14/12/2022', false, '$572062.53', true, '5170942069', '9942054718');
+insert into checksouts (id, dia, cuentaabierta, cuentatotal, pagocuenta, clientes_documento, empleados_documento) values (4, '19/09/2023', true, '$375770.04', false, '4553858127', '4200146475');
+insert into checksouts (id, dia, cuentaabierta, cuentatotal, pagocuenta, clientes_documento, empleados_documento) values (5, '04/08/2023', true, '$727718.17', true, '5656311875', '5724332367');
+insert into checksouts (id, dia, cuentaabierta, cuentatotal, pagocuenta, clientes_documento, empleados_documento) values (6, '05/03/2023', true, '$19357.66', true, '8820476565', '7172645480');
+insert into checksouts (id, dia, cuentaabierta, cuentatotal, pagocuenta, clientes_documento, empleados_documento) values (7, '03/12/2022', true, '$255793.52', true, '5143748794', '2542387121');
+insert into checksouts (id, dia, cuentaabierta, cuentatotal, pagocuenta, clientes_documento, empleados_documento) values (8, '03/03/2023', false, '$356048.06', false, '7714176696', '6711336729');
+insert into checksouts (id, dia, cuentaabierta, cuentatotal, pagocuenta, clientes_documento, empleados_documento) values (9, '07/07/2023', false, '$86628.94', false, '4558435359', '3113924804');
+insert into checksouts (id, dia, cuentaabierta, cuentatotal, pagocuenta, clientes_documento, empleados_documento) values (10, '24/07/2023', true, '$516285.68', false, '2831308979', '3219274196');

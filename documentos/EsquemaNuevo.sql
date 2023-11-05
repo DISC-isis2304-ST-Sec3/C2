@@ -3,12 +3,12 @@
 -- Creacion del secuenciador
 create sequence hoteles_sequence;
 
-CREATE TABLE acompañantes (
-    idacompañante      NUMBER NOT NULL,
+CREATE TABLE acompanantes (
+    idacompanante      NUMBER NOT NULL,
     clientes_documento NUMBER NOT NULL
 );
 
-ALTER TABLE acompañantes ADD CONSTRAINT acompañantes_pk PRIMARY KEY ( idacompañante,
+ALTER TABLE acompanantes ADD CONSTRAINT acompanantes_pk PRIMARY KEY ( idacompanante,
                                                                       clientes_documento );
 
 CREATE TABLE bares (
@@ -378,8 +378,8 @@ CREATE TABLE tiendas (
 ALTER TABLE tiendas ADD CONSTRAINT tiendas_pk PRIMARY KEY ( nombre,
                                                             hoteles_nombre );
 
-ALTER TABLE acompañantes
-    ADD CONSTRAINT acompañantes_clientes_fk FOREIGN KEY ( clientes_documento )
+ALTER TABLE acompanantes
+    ADD CONSTRAINT acompanantes_clientes_fk FOREIGN KEY ( clientes_documento )
         REFERENCES clientes ( documento );
 
 ALTER TABLE bares
