@@ -1,0 +1,10 @@
+insert into internets (id, costo, capacidad, nombre_hotel) values (1, '$31.22', '50 Mbps', null);
+insert into internets (id, costo, capacidad, nombre_hotel) values (2, '$25.73', '100 Mbps', null);
+insert into internets (id, costo, capacidad, nombre_hotel) values (3, '$23.22', '100 Mbps', null);
+insert into internets (id, costo, capacidad, nombre_hotel) values (4, '$11.03', '250 Mbps', null);
+insert into internets (id, costo, capacidad, nombre_hotel) values (5, '$26.11', '250 Mbps', null);
+insert into internets (id, costo, capacidad, nombre_hotel) values (6, '$25.61', '50 Mbps', null);
+insert into internets (id, costo, capacidad, nombre_hotel) values (7, '$37.21', '50 Mbps', null);
+insert into internets (id, costo, capacidad, nombre_hotel) values (8, '$19.70', '500 Mbps', null);
+insert into internets (id, costo, capacidad, nombre_hotel) values (9, '$11.16', '250 Mbps', null);
+insert into internets (id, costo, capacidad, nombre_hotel) values (10, '$24.53', '10 Mbps', null);

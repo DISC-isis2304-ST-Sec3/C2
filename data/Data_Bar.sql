@@ -1,0 +1,10 @@
+insert into MOCK_DATA (nombre, estilo, costo, capacidad, costo_cargado, nombre_hotel, hoteles) values ('The Speakeasy', 'vintage', '$963.00', 759, '$1968.25', null, null);
+insert into MOCK_DATA (nombre, estilo, costo, capacidad, costo_cargado, nombre_hotel, hoteles) values ('The Lounge', 'industrial', '$148.05', 420, '$1760.27', null, null);
+insert into MOCK_DATA (nombre, estilo, costo, capacidad, costo_cargado, nombre_hotel, hoteles) values ('Cheers Bar', 'rustic', '$696.39', 229, '$1932.29', null, null);
+insert into MOCK_DATA (nombre, estilo, costo, capacidad, costo_cargado, nombre_hotel, hoteles) values ('The Speakeasy', 'modern', '$702.89', 742, '$1500.61', null, null);
+insert into MOCK_DATA (nombre, estilo, costo, capacidad, costo_cargado, nombre_hotel, hoteles) values ('The Pub', 'vintage', '$1565.00', 36, '$1776.65', null, null);
+insert into MOCK_DATA (nombre, estilo, costo, capacidad, costo_cargado, nombre_hotel, hoteles) values ('The Speakeasy', 'industrial', '$1749.60', 445, '$877.64', null, null);
+insert into MOCK_DATA (nombre, estilo, costo, capacidad, costo_cargado, nombre_hotel, hoteles) values ('The Lounge', 'modern', '$422.83', 334, '$1500.29', null, null);
+insert into MOCK_DATA (nombre, estilo, costo, capacidad, costo_cargado, nombre_hotel, hoteles) values ('Cheers Bar', 'rustic', '$967.63', 234, '$1954.03', null, null);
+insert into MOCK_DATA (nombre, estilo, costo, capacidad, costo_cargado, nombre_hotel, hoteles) values ('The Speakeasy', 'rustic', '$995.62', 479, '$1665.69', null, null);
+insert into MOCK_DATA (nombre, estilo, costo, capacidad, costo_cargado, nombre_hotel, hoteles) values ('The Tap Room', 'vintage', '$541.44', 879, '$996.03', null, null);
