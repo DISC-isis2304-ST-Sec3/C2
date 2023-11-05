@@ -1,0 +1,10 @@
+insert into restaurantes (nombre, estilo, capacidad, costo, tienecostoad, costoad, hoteles_nombre, rests_id) values ('The Grill House', 'Indian', 31, 190, 0, 122, null, 1);
+insert into restaurantes (nombre, estilo, capacidad, costo, tienecostoad, costoad, hoteles_nombre, rests_id) values ('Asian Fusion', 'Japanese', 117, 107, 0, 146, null, 2);
+insert into restaurantes (nombre, estilo, capacidad, costo, tienecostoad, costoad, hoteles_nombre, rests_id) values ('The Grill House', 'Indian', 108, 113, 0, 156, null, 3);
+insert into restaurantes (nombre, estilo, capacidad, costo, tienecostoad, costoad, hoteles_nombre, rests_id) values ('Savory Bites', 'Chinese', 163, 126, 1, 158, null, 4);
+insert into restaurantes (nombre, estilo, capacidad, costo, tienecostoad, costoad, hoteles_nombre, rests_id) values ('The Spice Route', 'Japanese', 149, 107, 1, 178, null, 5);
+insert into restaurantes (nombre, estilo, capacidad, costo, tienecostoad, costoad, hoteles_nombre, rests_id) values ('Gourmet Garden', 'Chinese', 42, 75, 0, 141, null, 6);
+insert into restaurantes (nombre, estilo, capacidad, costo, tienecostoad, costoad, hoteles_nombre, rests_id) values ('The Spice Route', 'Japanese', 136, 60, 0, 174, null, 7);
+insert into restaurantes (nombre, estilo, capacidad, costo, tienecostoad, costoad, hoteles_nombre, rests_id) values ('Cafe Delight', 'Japanese', 90, 15, 0, 84, null, 8);
+insert into restaurantes (nombre, estilo, capacidad, costo, tienecostoad, costoad, hoteles_nombre, rests_id) values ('Asian Fusion', 'American', 181, 121, 1, 53, null, 9);
+insert into restaurantes (nombre, estilo, capacidad, costo, tienecostoad, costoad, hoteles_nombre, rests_id) values ('Gourmet Garden', 'Japanese', 60, 148, 0, 94, null, 10);

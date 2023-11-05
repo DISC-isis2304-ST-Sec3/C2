@@ -1,0 +1,10 @@
+insert into supers (nombre, consumo, hoteles_nombre) values ('Foodland', 22, null);
+insert into supers (nombre, consumo, hoteles_nombre) values ('Foodland', 52, null);
+insert into supers (nombre, consumo, hoteles_nombre) values ('Savemore', 46, null);
+insert into supers (nombre, consumo, hoteles_nombre) values ('Green Grocer', 80, null);
+insert into supers (nombre, consumo, hoteles_nombre) values ('Shopwise', 69, null);
+insert into supers (nombre, consumo, hoteles_nombre) values ('Foodland', 39, null);
+insert into supers (nombre, consumo, hoteles_nombre) values ('Mega Mart', 26, null);
+insert into supers (nombre, consumo, hoteles_nombre) values ('Supermart', 37, null);
+insert into supers (nombre, consumo, hoteles_nombre) values ('Fresh Market', 57, null);
+insert into supers (nombre, consumo, hoteles_nombre) values ('Grocery World', 36, null);

@@ -1,0 +1,10 @@
+insert into tiendas (nombre, tipo, consumo, hoteles_nombre) values ('BeautyBoutique', 'clothing', 52, null);
+insert into tiendas (nombre, tipo, consumo, hoteles_nombre) values ('PetParadise', 'jewelry', 87, null);
+insert into tiendas (nombre, tipo, consumo, hoteles_nombre) values ('GourmetDelights', 'grocery', 67, null);
+insert into tiendas (nombre, tipo, consumo, hoteles_nombre) values ('FashionFusion', 'electronics', 30, null);
+insert into tiendas (nombre, tipo, consumo, hoteles_nombre) values ('SportsWorld', 'sporting goods', 74, null);
+insert into tiendas (nombre, tipo, consumo, hoteles_nombre) values ('HomeEssentials', 'pharmacy', 73, null);
+insert into tiendas (nombre, tipo, consumo, hoteles_nombre) values ('GourmetDelights', 'furniture', 27, null);
+insert into tiendas (nombre, tipo, consumo, hoteles_nombre) values ('GourmetDelights', 'jewelry', 30, null);
+insert into tiendas (nombre, tipo, consumo, hoteles_nombre) values ('GourmetDelights', 'electronics', 72, null);
+insert into tiendas (nombre, tipo, consumo, hoteles_nombre) values ('GourmetDelights', 'clothing', 59, null);
