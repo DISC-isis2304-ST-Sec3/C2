@@ -1,0 +1,10 @@
+insert into acompañantes (idacompañantes, clientes_documento) values (1, null);
+insert into acompañantes (idacompañantes, clientes_documento) values (2, null);
+insert into acompañantes (idacompañantes, clientes_documento) values (3, null);
+insert into acompañantes (idacompañantes, clientes_documento) values (4, null);
+insert into acompañantes (idacompañantes, clientes_documento) values (5, null);
+insert into acompañantes (idacompañantes, clientes_documento) values (6, null);
+insert into acompañantes (idacompañantes, clientes_documento) values (7, null);
+insert into acompañantes (idacompañantes, clientes_documento) values (8, null);
+insert into acompañantes (idacompañantes, clientes_documento) values (9, null);
+insert into acompañantes (idacompañantes, clientes_documento) values (10, null);
