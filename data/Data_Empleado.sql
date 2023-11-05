@@ -1,0 +1,10 @@
+insert into MOCK_DATA (documento, nombre, apellido, edad, cargo, salario, hoteles) values ('26-805-4059', 'De', 'O''Dougherty', 40, 'Mesero', '$1226.80', 'Grand Hotel');
+insert into MOCK_DATA (documento, nombre, apellido, edad, cargo, salario, hoteles) values ('69-154-8209', 'Ellery', 'Petican', 46, 'Gerente', '$919.70', 'Palm Paradise Hotel');
+insert into MOCK_DATA (documento, nombre, apellido, edad, cargo, salario, hoteles) values ('30-132-7805', 'Sammie', 'Piel', 21, 'Gerente', '$1912.25', 'Grand Hotel');
+insert into MOCK_DATA (documento, nombre, apellido, edad, cargo, salario, hoteles) values ('65-592-1280', 'Benson', 'DeSousa', 25, 'Vendedor', '$1211.52', 'Mountain Lodge');
+insert into MOCK_DATA (documento, nombre, apellido, edad, cargo, salario, hoteles) values ('85-677-4318', 'Jo-ann', 'Dukes', 55, 'Mesero', '$1112.78', 'Mountain Lodge');
+insert into MOCK_DATA (documento, nombre, apellido, edad, cargo, salario, hoteles) values ('18-446-2885', 'Lorine', 'Moneti', 45, 'Vendedor', '$791.88', 'Sunset Resort');
+insert into MOCK_DATA (documento, nombre, apellido, edad, cargo, salario, hoteles) values ('10-302-6607', 'Lucien', 'Creed', 25, 'Recepcionista', '$562.99', 'Palm Paradise Hotel');
+insert into MOCK_DATA (documento, nombre, apellido, edad, cargo, salario, hoteles) values ('20-236-7734', 'Noam', 'Milington', 22, 'Mesero', '$781.63', 'Palm Paradise Hotel');
+insert into MOCK_DATA (documento, nombre, apellido, edad, cargo, salario, hoteles) values ('12-718-9718', 'Koral', 'Botcherby', 23, 'Supervisor', '$1672.72', 'Palm Paradise Hotel');
+insert into MOCK_DATA (documento, nombre, apellido, edad, cargo, salario, hoteles) values ('37-525-3845', 'Isidore', 'Moncreiff', 73, 'Recepcionista', '$1922.01', 'Mountain Lodge');

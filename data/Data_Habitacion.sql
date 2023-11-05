@@ -1,0 +1,10 @@
+insert into habitaciones (id, tipo, capacidad, precio, consumo, nombre_hotel) values (1, 'sencilla', '2-3', '$371.31', '$197.38', null);
+insert into habitaciones (id, tipo, capacidad, precio, consumo, nombre_hotel) values (2, 'doble', '1', '$961.49', '$1613.61', null);
+insert into habitaciones (id, tipo, capacidad, precio, consumo, nombre_hotel) values (3, 'suite presidencial', '6-8', '$496.27', '$351.95', null);
+insert into habitaciones (id, tipo, capacidad, precio, consumo, nombre_hotel) values (4, 'doble', '6-8', '$268.11', '$910.38', null);
+insert into habitaciones (id, tipo, capacidad, precio, consumo, nombre_hotel) values (5, 'familiar', '6-8', '$56.68', '$834.68', null);
+insert into habitaciones (id, tipo, capacidad, precio, consumo, nombre_hotel) values (6, 'suite', '6-8', '$824.47', '$605.12', null);
+insert into habitaciones (id, tipo, capacidad, precio, consumo, nombre_hotel) values (7, 'doble', '6-8', '$318.64', '$1391.67', null);
+insert into habitaciones (id, tipo, capacidad, precio, consumo, nombre_hotel) values (8, 'doble', '2-3', '$659.06', '$447.24', null);
+insert into habitaciones (id, tipo, capacidad, precio, consumo, nombre_hotel) values (9, 'doble', '6-8', '$518.80', '$180.14', null);
+insert into habitaciones (id, tipo, capacidad, precio, consumo, nombre_hotel) values (10, 'suite presidencial', '6-8', '$619.08', '$466.71', null);
