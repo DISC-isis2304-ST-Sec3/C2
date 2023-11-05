@@ -1,0 +1,10 @@
+insert into MOCK_DATA (documento, nombre, apellido, edad) values ('95-534-5684', 'Donny', 'Folland', 43);
+insert into MOCK_DATA (documento, nombre, apellido, edad) values ('84-428-4629', 'Gustavo', 'Vasilchenko', 52);
+insert into MOCK_DATA (documento, nombre, apellido, edad) values ('01-475-5716', 'Codi', 'Birnie', 81);
+insert into MOCK_DATA (documento, nombre, apellido, edad) values ('11-948-7816', 'Josh', 'Gaymer', 88);
+insert into MOCK_DATA (documento, nombre, apellido, edad) values ('52-726-0029', 'Daron', 'Larvin', 41);
+insert into MOCK_DATA (documento, nombre, apellido, edad) values ('69-658-3224', 'Reggi', 'Beincken', 65);
+insert into MOCK_DATA (documento, nombre, apellido, edad) values ('20-283-1624', 'Cornelia', 'Gribble', 95);
+insert into MOCK_DATA (documento, nombre, apellido, edad) values ('58-949-3265', 'Mellisent', 'Chatt', 40);
+insert into MOCK_DATA (documento, nombre, apellido, edad) values ('11-850-6332', 'Cyrille', 'Meah', 25);
+insert into MOCK_DATA (documento, nombre, apellido, edad) values ('33-413-4580', 'Leonid', 'Rosiello', 82);
