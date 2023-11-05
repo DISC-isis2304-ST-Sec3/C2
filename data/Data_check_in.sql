@@ -1,0 +1,10 @@
+insert into MOCK_DATA (Dia, cuentaAbierta, ID) values ('10/09/2023', false, 1);
+insert into MOCK_DATA (Dia, cuentaAbierta, ID) values ('28/07/2023', true, 2);
+insert into MOCK_DATA (Dia, cuentaAbierta, ID) values ('08/12/2022', false, 3);
+insert into MOCK_DATA (Dia, cuentaAbierta, ID) values ('17/02/2023', true, 4);
+insert into MOCK_DATA (Dia, cuentaAbierta, ID) values ('08/12/2022', false, 5);
+insert into MOCK_DATA (Dia, cuentaAbierta, ID) values ('05/04/2023', false, 6);
+insert into MOCK_DATA (Dia, cuentaAbierta, ID) values ('13/05/2023', false, 7);
+insert into MOCK_DATA (Dia, cuentaAbierta, ID) values ('21/09/2023', false, 8);
+insert into MOCK_DATA (Dia, cuentaAbierta, ID) values ('28/03/2023', true, 9);
+insert into MOCK_DATA (Dia, cuentaAbierta, ID) values ('02/12/2022', false, 10);
