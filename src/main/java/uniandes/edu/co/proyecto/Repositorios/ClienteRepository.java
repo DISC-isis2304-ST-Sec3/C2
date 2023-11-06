@@ -33,6 +33,11 @@ public interface ClienteRepository extends JpaRepository<Cliente, Integer>{
     @Query(value = "DELETE FROM clientes WHERE documento = :documento", nativeQuery=true)
     void eliminarCliente(@Param("documento") Integer documento);
 
+    @Query(value = "SELECT clientes.*, cuentas.consumo, reservas.fechaentrada FROM clientes INNER JOIN reservas.clientes_documento = clientes.documento "+
+    "INNER JOIN clientes.documento = cuentas.clientes_documento "+
+    "WHERE ((reservas.fechasalida - reservas.fechaentrada) >= 14) OR (cuentas.consumo > 15000000 AND reservas.fechaentrada > '01-01-2023') ", nativeQuery = true)
+    Collection<Cliente> darBuenosClientes();
+
     //Requerimiento 12
     @Query(value = "SELECT * FROM clientes WHERE hotel_nombre = :hotel_nombre"
     + "INNER JOIN checkins ON clientes.checkins_id = checkins.id"
@@ -95,3 +100,4 @@ public interface ClienteRepository extends JpaRepository<Cliente, Integer>{
     Collection<Cliente> darClientesCaracteristica2(@Param("hotel_nombre") String hotel_nombre);
  
 }
+
