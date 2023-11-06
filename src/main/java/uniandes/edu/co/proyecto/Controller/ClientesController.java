@@ -16,6 +16,12 @@ public class ClientesController {
     @Autowired
     private ClienteRepository ClienteRepository;
 
+    @GetMapping("/clientes")
+    public String clientes(Model model) {
+        model.addAttribute("clientesBuenos", ClienteRepository.darBuenosClientes());
+        return "bebidasBuenos";
+    }
+
     @GetMapping("/clientes/new")
     public String ClienteForm(Model model) {
         model.addAttribute("Cliente", new Cliente());

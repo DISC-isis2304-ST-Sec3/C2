@@ -14,6 +14,12 @@ public class HabitacionesController {
      @Autowired
     private HabitacionRepository HabitacionRepository;
 
+    @GetMapping("/habitaciones")
+    public String habitaciones(Model model) {
+        model.addAttribute("habitacionesIndices", HabitacionRepository.darIndicesHabitaciones());
+        return "habitacionesIndices";
+    }
+
     @GetMapping("/habitaciones/new")
     public String HabitacionForm(Model model) {
         model.addAttribute("Habitacion", new Habitacion());
