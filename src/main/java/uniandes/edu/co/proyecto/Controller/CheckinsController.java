@@ -1,5 +1,7 @@
 package uniandes.edu.co.proyecto.Controller;
 
+import java.util.Date;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,6 +17,21 @@ import uniandes.edu.co.proyecto.Repositorios.CheckinRepository;
 public class CheckinsController {
     @Autowired
     private CheckinRepository checkinRepository;
+
+    @GetMapping("/checkins")
+    public String checkins(Model model, Integer consumo) {
+        Date FechaMayorOcupacion = checkinRepository
+                .darFechaMayorOcupacion();
+
+        Date FechaMenorOcupacion = checkinRepository
+                .darFechaMenorOcupacion();
+
+        Date FechaMayoresIngresos = checkinRepository
+                .darFechaMayoresIngresos();
+
+        return "checkins";
+    }
+
 
     @GetMapping("/checkins/new")
     public String checkinForm(Model model) {

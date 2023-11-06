@@ -12,6 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 import uniandes.edu.co.proyecto.Modelo.Checkin;
 
 public interface CheckinRepository extends JpaRepository<Checkin, Integer>{
+
     @Query(value = "SELECT * FROM checkins", nativeQuery=true)
     Collection<Checkin> darCheckins();
 
@@ -32,4 +33,27 @@ public interface CheckinRepository extends JpaRepository<Checkin, Integer>{
     @Transactional
     @Query(value = "DELETE FROM checkins WHERE documentocliente = :documentocliente)", nativeQuery=true)
     void eliminarCheckin(@Param("id") Integer id);
+
+    @Query(value = "SELECT fecha, COUNT(*) as ocupacion\r\n" +
+       "FROM checkin\r\n" +
+       "GROUP BY fecha\r\n" +
+       "ORDER BY ocupacion DESC\r\n" +
+       "LIMIT 1", nativeQuery = true)
+    Date darFechaMayorOcupacion();
+
+    @Query(value = "SELECT fecha, COUNT(*) as ocupacion\r\n" +
+    "FROM checkin\r\n" +
+    "GROUP BY fecha\r\n" +
+    "ORDER BY ocupacion ASC\r\n" +
+    "LIMIT 1", nativeQuery = true)
+    Date darFechaMenorOcupacion();
+
+    @Query(value = "SELECT fecha, SUM(consumo) as ingresos\r\n" +
+       "FROM cuenta\r\n" +
+       "INNER JOIN checkin ON cuenta.documento = checkin.documento\r\n" +
+       "GROUP BY fecha\r\n" +
+       "ORDER BY ingresos DESC\r\n" +
+       "LIMIT 1", nativeQuery = true)
+    Date darFechaMayoresIngresos();
+
 }
