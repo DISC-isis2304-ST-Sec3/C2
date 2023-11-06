@@ -11,6 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 import uniandes.edu.co.proyecto.Modelo.Habitacion;
 
 public interface HabitacionRepository extends JpaRepository<Habitacion, Integer>{
+
     @Query(value = "SELECT * FROM habitaciones", nativeQuery=true)
     Collection<Habitacion> darHabitaciones();
 
@@ -31,5 +32,13 @@ public interface HabitacionRepository extends JpaRepository<Habitacion, Integer>
     @Transactional
     @Query(value = "DELETE FROM habitaciones WHERE id = :id", nativeQuery=true)
     void eliminarHabitacion(@Param("id") Integer id);
+
+
+    //CONSULTAS NUEVAS:
+    @Query(value = "SELECT habitaciones.id, Habitaciones.tipo, COUNT(Reservas.id), "+
+                    "(SUM(ABS(Reservas.fechasalida - Reservas.fechaentrada)) / 365.0)"+
+                    "FROM habitaciones LEFT JOIN reservas ON habitaciones.id = Reservas.id_habitacion "+
+                    "WHERE reservas.fechaentrada >= '01-01-2023' AND reservas.fechaentrada < '01-01-2024' ", nativeQuery = true)
+    Collection<Habitacion> darIndicesHabitaciones();
 
 }
