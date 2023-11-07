@@ -17,7 +17,10 @@ public class Cliente {
     private Integer documento;
 
     private Integer edad;
-    private Integer habitacion;
+    @OneToOne
+    @JoinColumn(name = "id", referencedColumnName = "id")
+    private Habitacion habitacion;
+
     private Integer consumo;
 
     @ManyToOne
@@ -25,18 +28,18 @@ public class Cliente {
     private Hotel hotel_nombre;
 
     @OneToOne
-    @JoinColumn(name = "checksins_id", referencedColumnName = "id")
+    @JoinColumn(name = "checksins_id", referencedColumnName = "documentoCliente")
     private Checkin checksins_id;
 
     @OneToOne
-    @JoinColumn(name = "checksouts_id", referencedColumnName = "id")
+    @JoinColumn(name = "checksouts_id", referencedColumnName = "clientes_documento")
     private Checkout checksouts_id;
 
     @OneToOne
-    @JoinColumn(name = "reservas_id", referencedColumnName = "id")
+    @JoinColumn(name = "reservas_id", referencedColumnName = "clientes_documento")
     private Reserva reservas_id;
 
-    public Cliente(String nombre, String apellido, Integer documento, Integer edad, Integer habitacion, Integer consumo, Hotel hotel_nombre, Checkin checksins_id, Checkout checksouts_id, Reserva reservas_id)
+    public Cliente(String nombre, String apellido, Integer documento, Integer edad, Habitacion habitacion, Integer consumo, Hotel hotel_nombre, Checkin checksins_id, Checkout checksouts_id, Reserva reservas_id)
     {
         this.nombre = nombre;
         this.apellido = apellido;
@@ -47,6 +50,7 @@ public class Cliente {
         this.hotel_nombre = hotel_nombre;
         this.checksins_id = checksins_id;
         this.checksouts_id = checksouts_id;
+        this.reservas_id = reservas_id;
     }
 
     public Cliente()
@@ -84,11 +88,11 @@ public class Cliente {
         this.edad = edad;
     }
 
-    public Integer getHabitacion() {
+    public Habitacion getHabitacion() {
         return habitacion;
     }
 
-    public void setHabitacion(Integer habitacion) {
+    public void setHabitacion(Habitacion habitacion) {
         this.habitacion = habitacion;
     }
 

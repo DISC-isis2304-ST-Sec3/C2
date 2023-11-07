@@ -5,7 +5,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -17,7 +17,7 @@ public class Piscina {
     private Integer capacidad;
     private Integer profundidad;
     private String horario;
-    @OneToMany
+    @ManyToOne
     @JoinColumn(name="nombre_hotel", referencedColumnName = "nombre")
     private Hotel nombre_hotel;
 

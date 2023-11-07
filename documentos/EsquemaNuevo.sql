@@ -128,8 +128,7 @@ ALTER TABLE cntassupers ADD CONSTRAINT cntassupers_pk PRIMARY KEY ( cuentas_id,
 
 CREATE TABLE cntastiendas (
     cuentas_id      NUMBER NOT NULL,
-    tiendas_nombre  VARCHAR2(255) NOT NULL,
-    tiendas_nombre1 VARCHAR2(255) NOT NULL
+    tiendas_nombre  VARCHAR2(255) NOT NULL
 );
 
 ALTER TABLE cntastiendas

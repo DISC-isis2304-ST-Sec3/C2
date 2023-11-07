@@ -1,4 +1,4 @@
-package uniandes.edu.co.proyecto.Modelo;
+package uniandes.edu.co.proyecto.Controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

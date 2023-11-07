@@ -20,13 +20,13 @@ public interface ReservaRepository extends JpaRepository<Reserva, Integer>{
 
     @Modifying
     @Transactional
-    @Query(value = "INSERT INTO reservas (id, numpersonas, fechaentrada, fechasalida, cliente_documento) VALUES(hoteles_sequence.nextval, :id, :numpersonas, :fechaentrada, :fechasalida, :cliente_documento)", nativeQuery=true)
-    void insertarReserva(@Param("id") Integer id, @Param("numpersonas") Integer numpersonas, @Param("fechaentrada") Date fechaentradas, @Param("fechasalida") Date fechasalida, @Param("cliente_documento") Integer cliente_documento);
+    @Query(value = "INSERT INTO reservas (id, numpersonas, fechaentrada, fechasalida, clientes_documento) VALUES(hoteles_sequence.nextval, :id, :numpersonas, :fechaentrada, :fechasalida, :clientes_documento)", nativeQuery=true)
+    void insertarReserva(@Param("id") Integer id, @Param("numpersonas") Integer numpersonas, @Param("fechaentrada") Date fechaentradas, @Param("fechasalida") Date fechasalida, @Param("clientes_documento") Integer clientes_documento);
 
     @Modifying
     @Transactional
-    @Query(value = "UPDATE reservas SET numpersonas = :numpersonas, fechaentrada = :fechaentrada, fechasalida = :fechasalida, cliente_documento = :cliente_documento WHERE id = :id", nativeQuery = true)
-    void actualizarReserva(@Param("numpersonas") Integer numpersonas, @Param("fechaentrada") Date fechaentrada, @Param("fechasalida") Date fechasalida, @Param("cliente_documento") Integer cliente_documento);
+    @Query(value = "UPDATE reservas SET numpersonas = :numpersonas, fechaentrada = :fechaentrada, fechasalida = :fechasalida, clientes_documento = :clientes_documento WHERE id = :id", nativeQuery = true)
+    void actualizarReserva(@Param("numpersonas") Integer numpersonas, @Param("fechaentrada") Date fechaentrada, @Param("fechasalida") Date fechasalida, @Param("clientes_documento") Integer clientes_documento);
 
     @Modifying
     @Transactional

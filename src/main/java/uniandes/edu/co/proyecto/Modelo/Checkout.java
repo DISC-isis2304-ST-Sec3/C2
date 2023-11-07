@@ -22,14 +22,14 @@ public class Checkout {
     private Integer pagocuenta;
 
     @OneToOne
-    @JoinColumn(name="documento_cliente", referencedColumnName = "id")
-    private Cliente cliente;
+    @JoinColumn(name="clientes_documento", referencedColumnName = "documento")
+    private Cliente clientes_documento;
 
     public Checkout(Date dia, Integer cuentaabierta, Integer cuentatotal, Integer pagocuenta, Cliente cliente) {
         this.dia = dia;
         this.cuentaabierta = cuentaabierta;
         this.cuentatotal = pagocuenta;
-        this.cliente = cliente;
+        this.clientes_documento = cliente;
     }
 
     public Checkout(){
@@ -78,11 +78,11 @@ public class Checkout {
     }
 
     public Cliente getCliente() {
-        return cliente;
+        return clientes_documento;
     }
 
     public void setCliente(Cliente cliente) {
-        this.cliente = cliente;
+        this.clientes_documento = cliente;
     }
 
 }
