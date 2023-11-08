@@ -10,7 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import uniandes.edu.co.proyecto.Modelo.Piscina;
 
-public interface PiscinaRepository extends JpaRepository<Piscina, String> {
+public interface PiscinaRepository extends JpaRepository<Piscina, Integer> {
     
     @Query(value = "SELECT * FROM piscinas", nativeQuery=true)
     Collection<Piscina> darPiscinas();

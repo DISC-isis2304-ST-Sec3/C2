@@ -11,7 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 import uniandes.edu.co.proyecto.Modelo.Empleado;
 
 
-public interface EmpleadoRepository extends JpaRepository<Empleado, String> {
+public interface EmpleadoRepository extends JpaRepository<Empleado, Integer> {
 
     @Query(value = "SELECT * FROM empleados", nativeQuery=true)
     Collection<Empleado> darEmpleados();

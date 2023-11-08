@@ -21,14 +21,14 @@ public class Reserva {
     private Date fechasalida;
 
     @OneToOne
-    @JoinColumn(name = "cliente_documento", referencedColumnName = "documento")
-    private Cliente cliente_documento;
+    @JoinColumn(name = "clientes_documento", referencedColumnName = "documento")
+    private Cliente clientes_documento;
 
-    public Reserva(Integer numpersonas, Date fechaentrada, Date fechasalida, Cliente cliente_documento){
+    public Reserva(Integer numpersonas, Date fechaentrada, Date fechasalida, Cliente clientes_documento){
         this.numpersonas = numpersonas;
         this.fechaentrada = fechaentrada;
         this.fechasalida = fechasalida;
-        this.cliente_documento = cliente_documento;
+        this.clientes_documento = clientes_documento;
     }
 
     public Reserva()
@@ -67,10 +67,10 @@ public class Reserva {
     }
 
     public Cliente getCliente_documento() {
-        return cliente_documento;
+        return clientes_documento;
     }
 
-    public void setCliente_documento(Cliente cliente_documento) {
-        this.cliente_documento = cliente_documento;
+    public void setCliente_documento(Cliente clientes_documento) {
+        this.clientes_documento = clientes_documento;
     }
 }

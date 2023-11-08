@@ -11,7 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import uniandes.edu.co.proyecto.Modelo.Checkout;
 
-public interface CheckOutRepository extends JpaRepository<Checkout, String>{
+public interface CheckOutRepository extends JpaRepository<Checkout, Integer>{
 
     @Query(value = "SELECT * FROM checkouts", nativeQuery=true)
     Collection<Checkout> darCheckouts();
