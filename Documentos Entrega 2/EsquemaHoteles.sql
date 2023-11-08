@@ -9,12 +9,12 @@
 
 -- predefined type, no DDL - XMLTYPE
 
-CREATE TABLE acompañantes (
-    idacompañante      INTEGER NOT NULL,
+CREATE TABLE acompanantes (
+    idacompanante      INTEGER NOT NULL,
     clientes_documento INTEGER NOT NULL
 );
 
-ALTER TABLE acompañantes ADD CONSTRAINT acompañantes_pk PRIMARY KEY ( idacompañante );
+ALTER TABLE acompanantes ADD CONSTRAINT acompanantes_pk PRIMARY KEY ( idacompanante );
 
 CREATE TABLE bares (
     nombre         VARCHAR2(255) NOT NULL,
@@ -435,8 +435,8 @@ CREATE TABLE tiendas (
 ALTER TABLE tiendas ADD CONSTRAINT tiendas_pk PRIMARY KEY ( nombre,
                                                             hoteles_nombre );
 
-ALTER TABLE acompañantes
-    ADD CONSTRAINT acompañantes_clientes_fk FOREIGN KEY ( clientes_documento )
+ALTER TABLE acompanantes
+    ADD CONSTRAINT acompanantes_clientes_fk FOREIGN KEY ( clientes_documento )
         REFERENCES clientes ( documento );
 
 ALTER TABLE bares
