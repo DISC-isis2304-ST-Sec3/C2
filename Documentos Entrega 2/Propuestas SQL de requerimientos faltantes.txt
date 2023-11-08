@@ -1,0 +1,24 @@
+//Requerimiento Funcional 2
+Select *, COUNT(bares.nombre), COUNT(pools.id), COUNT(restes.nombre), COUNT(spas.id), COUNT(servicios.tipo), COUNT(supers.nombre),
+COUNT(salones.id), COUNT(prestamos.id), COUNT(tiendas.nombre)
+FROM INNER JOIN Semanas on pools.semana = semanas.numeroSemanas, INNER JOIN Semanas on bares.semana = semanas.numeroSemanas,
+INNER JOIN Semana on rests.semana = semanas.numeroSemanas, INNER JOIN Semana on spas.semana = semanas.numeroSemanas, INNER JOIN Semanas on salones.semana = semanas.numeroSemanas,
+INNER JOIN Semanas on supers.semana = semanas.numeroSemanas, INNER JOIN tiendas.semanas = semanas.numeroSemanas, INNER JOIN prestamos.semanas = semanas.numeroSemanas
+Where rests.fecha between (fecha_1 And fecha_2) And pools.fecha between (fecha_1 And fecha_2) AND bares.fecha between (fecha_1 And fecha_2) AND
+spas.fecha between (fecha_1 And fecha_2) AND salones.fecha between (fecha_1 And fecha_2) AND supers.fecha between (fecha_1 And fecha_2)
+AND tiendas.fecha between (fecha_1 And fecha_2) AND prestamos.fecha between (fecha_1 And fecha_2) And MAX(COUNT(bares.nombre)) AND MAX(COUNT(pools.id)) AND MAX(COUNT(restes.nombre)) AND MAX(COUNT(spas.id)) AND MAX(COUNT(servicios.tipo)) AND MAX(COUNT(supers.nombre)) AND MAX(COUNT(salones.id)) AND MAX(COUNT(prestamos.id)) AND MAX(COUNT(tiendas.nombre));
+
+//Requerimiento funcional 1
+Select habitaciones.hoteles_nombre, habitaciones.consumo from INNER JOIN habitaciones on checkins.habitacion = habitacion.id Where
+checkins.fecha between(01/01/2023 AND 31/12/2023);
+
+//Requerimiento Funcional 8
+Select *, COUNT(bares.nombre), COUNT(pools.id), COUNT(restes.nombre), COUNT(spas.id), COUNT(servicios.tipo), COUNT(supers.nombre),
+COUNT(salones.id), COUNT(prestamos.id), COUNT(tiendas.nombre)
+FROM INNER JOIN Semanas on pools.semana = semanas.numeroSemanas, INNER JOIN Semanas on bares.semana = semanas.numeroSemanas,
+INNER JOIN Semana on rests.semana = semanas.numeroSemanas, INNER JOIN Semana on spas.semana = semanas.numeroSemanas, INNER JOIN Semanas on salones.semana = semanas.numeroSemanas,
+INNER JOIN Semanas on supers.semana = semanas.numeroSemanas, INNER JOIN tiendas.semanas = semanas.numeroSemanas, INNER JOIN prestamos.semanas = semanas.numeroSemanas Where MIN(COUNT(pools.id)) AND MIN(COUNT(restes.nombre)) AND MIN(COUNT(spas.id)) AND MIN(COUNT(servicios.tipo)) AND MIN(COUNT(supers.nombre)) AND MIN (COUNT(salones.id)) AND MIN(COUNT(prestamos.id)) AND MIN(COUNT(tiendas.nombre));
+
+//Requerimiento 4
+Select * FROM INNER JOIN Semanas on pools.semana = semanas.numeroSemanas, INNER JOIN Semanas on bares.semana = semanas.numeroSemanas,
+INNER JOIN Semana on rests.semana = semanas.numeroSemanas, INNER JOIN Semana on spas.semana = semanas.numeroSemanas, INNER JOIN Semanas on salones.semana = semanas.numeroSemanas,INNER JOIN Semanas on supers.semana = semanas.numeroSemanas, INNER JOIN tiendas.semanas = semanas.numeroSemanas, INNER JOIN prestamos.semanas = semanas.numeroSemanas WHERE
