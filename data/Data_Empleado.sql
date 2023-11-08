@@ -1,4 +1,4 @@
-insert into empleados (documento, nombre, apellido, edad, cargo, salario, hoteles) values (2680540549, 'De', 'O''Dougherty', 40, 'Mesero', 1226, 'Urban Oasis Hotel');
+insert into empleados (documento, nombre, apellido, edad, cargo, salario, hoteles) values (2680540549, 'De', 'Dougherty', 40, 'Mesero', 1226, 'Urban Oasis Hotel');
 insert into empleados (documento, nombre, apellido, edad, cargo, salario, hoteles) values (6691548209, 'Ellery', 'Petican', 46, 'Gerente', 919, 'Island Paradise Resort');
 insert into empleados (documento, nombre, apellido, edad, cargo, salario, hoteles) values (7301327834, 'Sammie', 'Piel', 21, 'Gerente', 1912, 'Coastal Haven Hotel');
 insert into empleados (documento, nombre, apellido, edad, cargo, salario, hoteles) values (6655921280, 'Benson', 'DeSousa', 25, 'Vendedor', 1211, 'Sunset Resort');
