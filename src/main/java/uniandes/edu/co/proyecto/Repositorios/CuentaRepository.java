@@ -36,4 +36,6 @@ public interface CuentaRepository extends JpaRepository<Cuenta, Integer>{
     "Where cliente := cliente"
     +"INNER JOIN cuentas on clientes.documento = cuentas.cliente.documento", nativeQuery=true)
     Collection<Cuenta> darCuentasCliente(@Param("cliente") Integer cliente);
+
+    
 }
