@@ -1,10 +1,13 @@
 package uniandes.edu.co.proyecto.Modelo;
 
+import java.sql.Date;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
+import jakarta.persistence.criteria.CriteriaBuilder.In;
 
 @Entity
 @Table(name="bares")
@@ -15,13 +18,15 @@ public class Bar {
     private Integer costo;
     private Integer capacidad;
     private Integer costocargado;
+    private Date fecha;
+    private Integer semana;
 
     @ManyToOne
     @JoinColumn(name = "hotel_nombre", referencedColumnName = "nombre")
     private Hotel hotel_nombre;
 
 
-    public Bar(String nombre, String estilo, Integer costo, Integer capacidad, Integer costocargado, Hotel hotel_nombre)
+    public Bar(String nombre, String estilo, Integer costo, Integer capacidad, Integer costocargado, Hotel hotel_nombre, Date fecha, Integer semana)
     {
         this.nombre = nombre;
         this.estilo = estilo;
@@ -29,6 +34,8 @@ public class Bar {
         this.capacidad = capacidad;
         this.costocargado = costocargado;
         this.hotel_nombre = hotel_nombre;
+        this.fecha = fecha;
+        this.semana = semana;
     }
 
     public Bar(){
@@ -83,4 +90,20 @@ public class Bar {
         this.hotel_nombre = hotel_nombre;
     }
 
+    public Date getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(Date fecha) {
+        this.fecha = fecha;
+    }
+
+    public Integer getSemana() {
+        return semana;
+    }
+
+    public void setSemana(Integer semana) {
+        this.semana = semana;
+    }
+    
 }
