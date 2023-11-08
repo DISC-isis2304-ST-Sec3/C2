@@ -11,7 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import uniandes.edu.co.proyecto.Modelo.Internet;
 
-public interface InternetRepository extends JpaRepository<Internet, String>{
+public interface InternetRepository extends JpaRepository<Internet, Integer>{
     @Query(value = "SELECT * FROM internets", nativeQuery=true)
     Collection<Internet> darInternet();
 

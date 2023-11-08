@@ -11,7 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 import uniandes.edu.co.proyecto.Modelo.Acompañante;
 
 
-public interface AcompañanteRepository extends JpaRepository<Acompañante, String>{
+public interface AcompañanteRepository extends JpaRepository<Acompañante, Integer>{
     @Query(value = "SELECT * FROM acompañantes", nativeQuery=true)
     Collection<Acompañante> darAcompañantes();
 

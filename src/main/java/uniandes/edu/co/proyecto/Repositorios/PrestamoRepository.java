@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import uniandes.edu.co.proyecto.Modelo.Prestamo;
 
-public interface PrestamoRepository extends JpaRepository<Prestamo, String>{
+public interface PrestamoRepository extends JpaRepository<Prestamo, Integer>{
     @Query(value = "SELECT * FROM prestamos", nativeQuery=true)
     Collection<Prestamo> darPrestamos();
 

@@ -11,7 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 import uniandes.edu.co.proyecto.Modelo.Salon;
 
 
-public interface SalonRepository  extends JpaRepository<Salon, String>{
+public interface SalonRepository  extends JpaRepository<Salon, Integer>{
     @Query(value = "SELECT * FROM salones", nativeQuery=true)
     Collection<Salon> darSalones();
 
