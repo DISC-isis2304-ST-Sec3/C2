@@ -40,9 +40,7 @@
   "nombre": "Luis",
   "apellido": "Galan",
   "edad": 30,
-  "documento": {
-    "$numberLong": "7777777777"
-  },
+  "documento":777777777,
   "salario": 2000000,
   "cargo": "Supervisor",
   "checkins": [],
