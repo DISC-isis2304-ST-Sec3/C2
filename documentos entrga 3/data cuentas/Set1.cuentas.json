@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "656cfda7ec06b05e4f63ddca"
+  },
+  "id": 1234,
+  "clienteDocumento": 1000987653,
+  "consumidos": [
+    1,
+    2,
+    2
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cfe8eec06b05e4f63ddcd"
+  },
+  "id": 1555,
+  "clienteDocumento": 1000987003,
+  "consumidos": [
+    3,
+    3,
+    2
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cfeb5ec06b05e4f63ddce"
+  },
+  "id": 1244,
+  "clienteDocumento": 234567890,
+  "consumidos": [
+    2,
+    3,
+    3
+  ]
+}]

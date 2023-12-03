@@ -75,6 +75,7 @@
   "empleados": [],
   "servicios": [
     {
+      "id": 9,
       "tipo": "Piscina",
       "costo": 20000,
       "name": "Oasis",
@@ -83,6 +84,7 @@
       "horaFin": "10:00"
     },
     {
+      "id": 10,
       "tipo": "Supermercado",
       "costo": 50000,
       "name": "Super express",
@@ -91,6 +93,7 @@
       "horaFin": "10:00"
     },
     {
+      "id": 11,
       "tipo": "Restaurante",
       "costo": 200000,
       "name": "Bistró Restaurant",
@@ -99,6 +102,7 @@
       "horaFin": "23:00"
     },
     {
+      "id": 12,
       "tipo": "Gimnasio",
       "costo": 1000000,
       "name": "PowerGym",
