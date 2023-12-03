@@ -1,0 +1,110 @@
+[{
+  "_id": {
+    "$oid": "656cc12466ad6c464427e813"
+  },
+  "nombre": "Four Seasons Panama",
+  "ciudad": "Ciudad de panama",
+  "Pais": "Panama",
+  "tipo": "Resort",
+  "habitaciones": [
+    {
+      "numero": 1,
+      "tipo": "sencilla",
+      "precio": 500000,
+      "comodidades": "Comedor, cocina",
+      "porcentajeOcupacion": 5,
+      "consumo": 300000
+    },
+    {
+      "numero": 2,
+      "tipo": "doble",
+      "precio": 600000,
+      "comodidades": "Comedor, cocina, terraza",
+      "porcentajeOcupacion": 15,
+      "consumo": 400000
+    },
+    {
+      "numero": 3,
+      "tipo": "familiar",
+      "precio": 1000000,
+      "comodidades": "Comedor, cocina, mini bar",
+      "porcentajeOcupacion": 30,
+      "consumo": 700000
+    },
+    {
+      "numero": 4,
+      "tipo": "suite",
+      "precio": 1500000,
+      "comodidades": "Comedor, cocina, jacuzzi",
+      "porcentajeOcupacion": 7,
+      "consumo": 1000000
+    },
+    {
+      "numero": 5,
+      "tipo": "suite presidencial",
+      "precio": 3000000,
+      "comodidades": "Comedor, cocina, mini bar, jacuzzi, billar",
+      "porcentajeOcupacion": 30,
+      "consumo": 2000000
+    }
+  ],
+  "planesconsumo": [
+    {
+      "tiempo": "2023/05/2-2023/11/30",
+      "tipoPlan": "Larga estadia",
+      "precio": 1000000,
+      "promociones": "25% en tiendas",
+      "beneficios": "Todo inluido"
+    },
+    {
+      "tiempo": "2023-11-03/2023-12-03",
+      "tipoPlan": "Corta estadia",
+      "precio": 200000,
+      "promociones": "5% en restaurantes",
+      "beneficios": "wifi gratis"
+    },
+    {
+      "tiempo": "2023-08-23/2023-11-30",
+      "tipoPlan": "Mediana estadia",
+      "precio": 700000,
+      "promociones": "15% en restaurantes",
+      "beneficios": "wifi y desayunos gratis"
+    }
+  ],
+  "clientes": [],
+  "empleados": [],
+  "servicios": [
+    {
+      "tipo": "Bar",
+      "costo": 50,
+      "nombre": "Kaput",
+      "fecha": "2023-11-25",
+      "horaInicio": "19:00",
+      "horaFin": "23:00"
+    },
+    {
+      "tipo": "Piscina",
+      "costo": 0,
+      "nombre": "piscina general",
+      "fecha": "2023-11-25",
+      "horaInicio": "10:00",
+      "horaFin": "22:00"
+    },
+    {
+      "tipo": "Gimnasio",
+      "costo": 20,
+      "nombre": "Gym",
+      "fecha": "2023-11-25",
+      "horaInicio": "06:00",
+      "horaFin": "20:00"
+    },
+    {
+      "tipo": "Spa",
+      "costo": 60,
+      "nombre": "Spa",
+      "fecha": "2023-11-25",
+      "horaInicio": "10:00",
+      "horaFin": "18:00"
+    }
+  ]
+}]
