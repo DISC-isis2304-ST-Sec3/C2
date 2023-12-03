@@ -59,9 +59,7 @@
   "nombre": "Javier",
   "apellido": "Milei",
   "edad": 40,
-  "documento": {
-    "$numberLong": "111222333444"
-  },
+  "documento": 1112223334,
   "tipo": "Cliente",
   "reserva": {
     "fechaEntrada": "2023-07-07",
