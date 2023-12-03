@@ -1,0 +1,83 @@
+[{
+  "_id": {
+    "$oid": "656cf56a66ad6c464427e81b"
+  },
+  "nombre": "Marcus",
+  "apellido": "Rashford",
+  "edad": 24,
+  "documento": 1234567890,
+  "tipo": "Cliente",
+  "reserva": {
+    "fechaEntrada": "2023-10-31",
+    "fechaSalida": "2023-12-09",
+    "numPersonas": 5
+  },
+  "checkin": {
+    "id": 1,
+    "cuentaAbierta": true,
+    "dia": "2023-10-31"
+  },
+  "checkout": {
+    "id": 17,
+    "cuentaAbierta": false,
+    "cuentaTotal": 1000000,
+    "dia": "2023-12-09"
+  },
+  "id_habitacion": 1
+},
+{
+  "_id": {
+    "$oid": "656cf60266ad6c464427e81d"
+  },
+  "nombre": "Luis",
+  "apellido": "Diaz",
+  "edad": 23,
+  "documento": 1357924680,
+  "tipo": "Cliente",
+  "reserva": {
+    "fechaEntrada": "2023-12-21",
+    "fechaSalida": "2024-04-21",
+    "numPersonas": 2
+  },
+  "checkin": {
+    "id": 2,
+    "cuentaAbierta": true,
+    "dia": "2023-12-21"
+  },
+  "checkout": {
+    "id": 21,
+    "cuentaAbierta": false,
+    "cuentaTotal": 5000000,
+    "dia": "2024-04-21"
+  },
+  "id_habitacion": 3
+},
+{
+  "_id": {
+    "$oid": "656cf6b666ad6c464427e81f"
+  },
+  "nombre": "Javier",
+  "apellido": "Milei",
+  "edad": 40,
+  "documento": {
+    "$numberLong": "111222333444"
+  },
+  "tipo": "Cliente",
+  "reserva": {
+    "fechaEntrada": "2023-07-07",
+    "fechaSalida": "2023-10-07",
+    "numPersonas": 5
+  },
+  "checkin": {
+    "id": 3,
+    "cuentaAbierta": true,
+    "dia": "2023-07-07"
+  },
+  "checkout": {
+    "id": 7,
+    "cuentaAbierta": false,
+    "cuentaTotal": 1700000,
+    "dia": "2023-10-07"
+  },
+  "id_habitacion": 2
+}]
