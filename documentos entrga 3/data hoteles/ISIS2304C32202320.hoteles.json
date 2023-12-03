@@ -1,0 +1,97 @@
+[{
+  "_id": {
+    "$oid": "656cba67ec06b05e4f63ddba"
+  },
+  "nombre": "Marriot Bogota",
+  "ciudad": "Bogota",
+  "pais": "Colombia",
+  "tipo": "hotel",
+  "habitaciones": [
+    {
+      "numero": 1,
+      "tipo": "sencilla",
+      "comodidades": "Comedor, televisor, refrigerador",
+      "porcentajeOcupación": 100,
+      "consumo": 200000
+    },
+    {
+      "numero": 2,
+      "tipo": "doble",
+      "comodidades": "Comedor, televisor, refrigerador",
+      "porcentajeOcupación": 50,
+      "consumo": 300000
+    },
+    {
+      "numero": 3,
+      "tipo": "familiar",
+      "comodidades": "Comedor, televisor, cocina",
+      "porcentajeOcupación": 40,
+      "consumo": 500000
+    },
+    {
+      "numero": 4,
+      "tipo": "suite",
+      "comodidades": "Comedor, televisor, cocina, jacuzzi",
+      "porcentajeOcupación": 50,
+      "consumo": 1000000
+    },
+    {
+      "numero": 5,
+      "tipo": "suite presidencial",
+      "comodidades": "Comedor, televisor, cocina, jacuzzi, sala, mayordomo",
+      "porcentajeOcupación": 100,
+      "consumo": 2000000
+    }
+  ],
+  "planesconsumo": [
+    {
+      "tiempo": "2023-10-24-2023-11-01",
+      "tipoPlan": "Mediana Estadía",
+      "precio": 200000,
+      "promociones": "3 masages en el spa",
+      "beneficios": "servicio a la habitación gratis"
+    },
+    {
+      "tiempo": "2023-10-01-2023-11-01",
+      "tipoPlan": "Larga Estadía",
+      "precio": 20000000,
+      "promociones": "5 masages en el spa y 2 tratamientos faciales",
+      "beneficios": "servicio a la habitación gratis, incluyendo desayuna y cena"
+    },
+    {
+      "tiempo": "2023-10-25-2023-11-02",
+      "tipoPlan": "Mediana Estadía",
+      "precio": 200000,
+      "promociones": "3 masages en el spa",
+      "beneficios": "servicio a la habitación gratis"
+    }
+  ],
+  "clientes": [],
+  "empelados": [],
+  "servicios": [
+    {
+      "tipo": "Piscina",
+      "costo": 0,
+      "nombre": "le grand piscine",
+      "fecha": "2023-10-31",
+      "horaInicio": "05:00",
+      "horaFin": "20:00"
+    },
+    {
+      "tipo": "Spa",
+      "costo": 150000,
+      "nombre": "Mouline Rouge",
+      "fecha": "2023-10-31",
+      "horaInicio": "10:00",
+      "horaFin": "20:00"
+    },
+    {
+      "tipo": "Restaurante",
+      "costo": 300000,
+      "nombre": "le petit prince",
+      "fecha": "2023-10-31",
+      "horaInicio": "18:00",
+      "horaFin": "22:00"
+    }
+  ]
+}]
