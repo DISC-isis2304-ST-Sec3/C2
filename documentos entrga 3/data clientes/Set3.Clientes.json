@@ -1,0 +1,80 @@
+[{
+  "_id": {
+    "$oid": "656cf7337d2d8ac39f4dbda8"
+  },
+  "nombre": "Rodolfo",
+  "apellido": "Sánchez",
+  "edad": 18,
+  "documento": 1234593,
+  "tipo": "Cliente",
+  "reserva": {
+    "fechaEntrada": "2023-05-12",
+    "fechaSalidad": "2023-05-20",
+    "numPersonas": 8
+  },
+  "checkin": {
+    "id": 5,
+    "cuentaAbierta": false,
+    "dia": "2023-05-12"
+  },
+  "checkout": {
+    "id": 5,
+    "cuentaAbierta": false,
+    "cuentaTotal": 250000,
+    "dia": "2023-05-20"
+  },
+  "id_habitacion": 12
+},
+{
+  "_id": {
+    "$oid": "656cf7647d2d8ac39f4dbdaa"
+  },
+  "nombre": "Andrea",
+  "apellido": "Rodriguez",
+  "edad": 45,
+  "documento": 185739900,
+  "tipo": "Cliente",
+  "reserva": {
+    "fechaEntrada": "2021-01-02",
+    "fechaSalidad": "2021-01-20",
+    "numPersonas": 3
+  },
+  "checkin": {
+    "id": 25,
+    "cuentaAbierta": true,
+    "dia": "2021-01-02"
+  },
+  "checkout": {
+    "id": 25,
+    "cuentaAbierta": true,
+    "cuentaTotal": 600000,
+    "dia": "2021-01-20"
+  },
+  "id_habitacion": 14
+},
+{
+  "_id": {
+    "$oid": "656cf7f97d2d8ac39f4dbdac"
+  },
+  "nombre": "Jimena",
+  "apellido": "Vargas",
+  "edad": 33,
+  "documento": 1000783111,
+  "tipo": "Cliente",
+  "reserva": {
+    "fechaEntrada": "2023-07-12",
+    "fechaSalidad": "2023-07-16",
+    "numPersonas": 1
+  },
+  "checkin": {
+    "id": 18,
+    "cuentaAbierta": true,
+    "dia": "2023-07-12"
+  },
+  "checkout": {
+    "id": 18,
+    "cuentaAbierta": true,
+    "cuentaTotal": 150000,
+    "dia": "2023-07-16"
+  }
+}]
