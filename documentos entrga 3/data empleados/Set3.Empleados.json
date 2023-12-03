@@ -1,0 +1,51 @@
+[{
+  "_id": {
+    "$oid": "656cfb267d2d8ac39f4dbdaf"
+  },
+  "nombre": "Juan",
+  "apellido": "Perez",
+  "edad": 28,
+  "documento": 10203456,
+  "salario": 2000000,
+  "cargo": "Recepcionista",
+  "checkins": [
+    5,
+    25,
+    18
+  ],
+  "checkouts": [
+    5,
+    25,
+    18
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cfb877d2d8ac39f4dbdb1"
+  },
+  "nombre": "Alejandro",
+  "apellido": "Jimenez",
+  "edad": 22,
+  "documento": 1000235007,
+  "salario": 2500000,
+  "cargo": "Supervisora",
+  "checkins": [
+    23
+  ],
+  "checkouts": [
+    22
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cfbc17d2d8ac39f4dbdb3"
+  },
+  "nombre": "Nicolas",
+  "apellido": "Suarez",
+  "edad": 25,
+  "documento": 52143289,
+  "salario": 3000000,
+  "cargo": "Gerente",
+  "checkins": [],
+  "checkouts": []
+}]
