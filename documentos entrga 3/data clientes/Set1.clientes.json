@@ -1,0 +1,78 @@
+[{
+  "_id": {
+    "$oid": "656cf3d3ec06b05e4f63ddbf"
+  },
+  "nombre": "Alina",
+  "apellido": "Sanchez",
+  "edad": 30,
+  "reserva": {
+    "id": 5,
+    "fechaEntrada": "2023-12-15",
+    "fechaSalida": "2024-01-15",
+    "numPersonas": 1
+  },
+  "checkin": {
+    "cuentaAbierta": true,
+    "dia": "2023-12-15",
+    "id": 17
+  },
+  "checkout": {
+    "cuentaAbierta": false,
+    "cuentaTotal": 100000,
+    "dia": "2024-01-15",
+    "id": 15
+  },
+  "id_habitacion": 1
+},
+{
+  "_id": {
+    "$oid": "656cf537ec06b05e4f63ddc0"
+  },
+  "nombre": "Carina",
+  "apellido": "Alvarez",
+  "edad": 25,
+  "reserva": {
+    "id": 6,
+    "fechaEntrada": "2023-12-04",
+    "fechaSalida": "2023-12-26",
+    "numPersonas": 3
+  },
+  "checkin": {
+    "cuentaAbierta": true,
+    "dia": "2023-12-04",
+    "id": 18
+  },
+  "checkout": {
+    "cuentaAbierta": false,
+    "cuentaTotal": 200000,
+    "dia": "2023-12-26",
+    "id": 16
+  },
+  "id_habitacion": 5
+},
+{
+  "_id": {
+    "$oid": "656cf57cec06b05e4f63ddc1"
+  },
+  "nombre": "Roberto",
+  "apellido": "Restrepo",
+  "edad": 40,
+  "reserva": {
+    "id": 7,
+    "fechaEntrada": "2023-02-05",
+    "fechaSalida": "2023-02-13",
+    "numPersonas": 6
+  },
+  "checkin": {
+    "cuentaAbierta": true,
+    "dia": "2023-02-05",
+    "id": 19
+  },
+  "checkout": {
+    "cuentaAbierta": false,
+    "cuentaTotal": 100000,
+    "dia": "2023-02-13",
+    "id": 17
+  },
+  "id_habitacion": 4
+}]
