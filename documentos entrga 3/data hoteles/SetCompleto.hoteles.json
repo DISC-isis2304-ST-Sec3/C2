@@ -1,0 +1,352 @@
+[{
+  "_id": {
+    "$oid": "656cc12466ad6c464427e813"
+  },
+  "nombre": "Four Seasons Panama",
+  "ciudad": "Ciudad de panama",
+  "pais": "Panama",
+  "tipo": "Resort",
+  "habitaciones": [
+    {
+      "numero": 1,
+      "tipo": "sencilla",
+      "precio": 500000,
+      "comodidades": "Comedor, cocina",
+      "porcentajeOcupacion": 5,
+      "consumo": 300000
+    },
+    {
+      "numero": 2,
+      "tipo": "doble",
+      "precio": 600000,
+      "comodidades": "Comedor, cocina, terraza",
+      "porcentajeOcupacion": 15,
+      "consumo": 400000
+    },
+    {
+      "numero": 3,
+      "tipo": "familiar",
+      "precio": 1000000,
+      "comodidades": "Comedor, cocina, mini bar",
+      "porcentajeOcupacion": 30,
+      "consumo": 700000
+    },
+    {
+      "numero": 4,
+      "tipo": "suite",
+      "precio": 1500000,
+      "comodidades": "Comedor, cocina, jacuzzi",
+      "porcentajeOcupacion": 7,
+      "consumo": 1000000
+    },
+    {
+      "numero": 5,
+      "tipo": "suite presidencial",
+      "precio": 3000000,
+      "comodidades": "Comedor, cocina, mini bar, jacuzzi, billar",
+      "porcentajeOcupacion": 30,
+      "consumo": 2000000
+    }
+  ],
+  "planesconsumo": [
+    {
+      "tiempo": "2023/05/2-2023/11/30",
+      "tipoPlan": "Larga estadia",
+      "precio": 1000000,
+      "promociones": "25% en tiendas",
+      "beneficios": "Todo inluido"
+    },
+    {
+      "tiempo": "2023-11-03/2023-12-03",
+      "tipoPlan": "Corta estadia",
+      "precio": 200000,
+      "promociones": "5% en restaurantes",
+      "beneficios": "wifi gratis"
+    },
+    {
+      "tiempo": "2023-08-23/2023-11-30",
+      "tipoPlan": "Mediana estadia",
+      "precio": 700000,
+      "promociones": "15% en restaurantes",
+      "beneficios": "wifi y desayunos gratis"
+    }
+  ],
+  "clientes": [
+    1234567890,
+    1357924680,
+    1112223334
+  ],
+  "empleados": [
+    192837465,
+    666666666,
+    777777777
+  ],
+  "servicios": [
+    {
+      "id": 1,
+      "tipo": "Bar",
+      "costo": 50,
+      "nombre": "Kaput",
+      "fecha": "2023-11-25",
+      "horaInicio": "19:00",
+      "horaFin": "23:00"
+    },
+    {
+      "id": 2,
+      "tipo": "Piscina",
+      "costo": 0,
+      "nombre": "piscina general",
+      "fecha": "2023-11-25",
+      "horaInicio": "10:00",
+      "horaFin": "22:00"
+    },
+    {
+      "id": 3,
+      "tipo": "Gimnasio",
+      "costo": 20,
+      "nombre": "Gym",
+      "fecha": "2023-11-25",
+      "horaInicio": "06:00",
+      "horaFin": "20:00"
+    },
+    {
+      "id": 4,
+      "tipo": "Spa",
+      "costo": 60,
+      "nombre": "Spa",
+      "fecha": "2023-11-25",
+      "horaInicio": "10:00",
+      "horaFin": "18:00"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cba67ec06b05e4f63ddba"
+  },
+  "nombre": "Marriot Bogota",
+  "ciudad": "Bogota",
+  "pais": "Colombia",
+  "tipo": "hotel",
+  "habitaciones": [
+    {
+      "numero": 1,
+      "tipo": "sencilla",
+      "comodidades": "Comedor, televisor, refrigerador",
+      "porcentajeOcupación": 100,
+      "consumo": 200000
+    },
+    {
+      "numero": 2,
+      "tipo": "doble",
+      "comodidades": "Comedor, televisor, refrigerador",
+      "porcentajeOcupación": 50,
+      "consumo": 300000
+    },
+    {
+      "numero": 3,
+      "tipo": "familiar",
+      "comodidades": "Comedor, televisor, cocina",
+      "porcentajeOcupación": 40,
+      "consumo": 500000
+    },
+    {
+      "numero": 4,
+      "tipo": "suite",
+      "comodidades": "Comedor, televisor, cocina, jacuzzi",
+      "porcentajeOcupación": 50,
+      "consumo": 1000000
+    },
+    {
+      "numero": 5,
+      "tipo": "suite presidencial",
+      "comodidades": "Comedor, televisor, cocina, jacuzzi, sala, mayordomo",
+      "porcentajeOcupación": 100,
+      "consumo": 2000000
+    }
+  ],
+  "planesconsumo": [
+    {
+      "tiempo": "2023-10-24-2023-11-01",
+      "tipoPlan": "Mediana Estadía",
+      "precio": 200000,
+      "promociones": "3 masages en el spa",
+      "beneficios": "servicio a la habitación gratis"
+    },
+    {
+      "tiempo": "2023-10-01-2023-11-01",
+      "tipoPlan": "Larga Estadía",
+      "precio": 20000000,
+      "promociones": "5 masages en el spa y 2 tratamientos faciales",
+      "beneficios": "servicio a la habitación gratis, incluyendo desayuna y cena"
+    },
+    {
+      "tiempo": "2023-10-25-2023-11-02",
+      "tipoPlan": "Mediana Estadía",
+      "precio": 200000,
+      "promociones": "3 masages en el spa",
+      "beneficios": "servicio a la habitación gratis"
+    }
+  ],
+  "clientes": [
+    1000987653,
+    234567890,
+    1000987003
+  ],
+  "empleados": [
+    1001345678,
+    1001364678,
+    1001255678
+  ],
+  "servicios": [
+    {
+      "id": "1",
+      "tipo": "Piscina",
+      "costo": 0,
+      "nombre": "le grand piscine",
+      "fecha": "2023-10-31",
+      "horaInicio": "05:00",
+      "horaFin": "20:00"
+    },
+    {
+      "id": "2",
+      "tipo": "Spa",
+      "costo": 150000,
+      "nombre": "Mouline Rouge",
+      "fecha": "2023-10-31",
+      "horaInicio": "10:00",
+      "horaFin": "20:00"
+    },
+    {
+      "id": "3",
+      "tipo": "Restaurante",
+      "costo": 300000,
+      "nombre": "le petit prince",
+      "fecha": "2023-10-31",
+      "horaInicio": "18:00",
+      "horaFin": "22:00"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656cc1dc7d2d8ac39f4dbd9b"
+  },
+  "nombre": "Marriot Cancun",
+  "ciudad": "Cancun",
+  "pais": "Mexico",
+  "tipo": "Resort",
+  "habitaciones": [
+    {
+      "numero": 1,
+      "tipo": "familiar",
+      "precio": 120000,
+      "comodidades": "Microondas, nevera, patio",
+      "porcentajeOcupacion": 8,
+      "consumo": 80000
+    },
+    {
+      "numero": 2,
+      "tipo": "suite",
+      "precio": 200000,
+      "comodidades": "Comedor, cocina",
+      "porcentajeOcupacion": 5,
+      "consumo": 200000
+    },
+    {
+      "numero": 3,
+      "tipo": "suite presidencial",
+      "precio": 350000,
+      "comodidades": "Jacuzzi, patio",
+      "porcentajeOcupacion": 12,
+      "consumo": 540000
+    },
+    {
+      "numero": 4,
+      "tipo": "doble",
+      "precio": 180000,
+      "comodidades": "Comedor, sala",
+      "porcentajeOcupacion": 10,
+      "consumo": 100000
+    },
+    {
+      "numero": 5,
+      "tipo": "sencilla",
+      "precio": 90000,
+      "comodidades": "Minibar",
+      "porcentajeOcupacion": 8,
+      "consumo": 40000
+    }
+  ],
+  "planesconsumo": [
+    {
+      "tiempo": "2023-01-10/2023-01-15",
+      "tipoPlan": "Corta estadía",
+      "precio": 300000,
+      "promociones": "5% en supermercados",
+      "beneficios": "wifi gratis"
+    },
+    {
+      "tiempo": "2023-01-20/2023--02-10",
+      "tipoPlan": "Larga estadía",
+      "precio": 5000000,
+      "promociones": "10% tiendas",
+      "beneficios": "todo incluido"
+    },
+    {
+      "tiempo": "2023-06-05//2023-06-13",
+      "tipoPlan": "Corta estadía",
+      "precio": 350000,
+      "promociones": "5% en restaurantes",
+      "beneficios": "desayuno incluido"
+    }
+  ],
+  "clientes": [
+    1234593,
+    185739900,
+    1000783111
+  ],
+  "empleados": [
+    10203456,
+    1000235007,
+    52143289
+  ],
+  "servicios": [
+    {
+      "id": 9,
+      "tipo": "Piscina",
+      "costo": 20000,
+      "name": "Oasis",
+      "fecha": "2023-10-20",
+      "horaInicio": "8:00",
+      "horaFin": "10:00"
+    },
+    {
+      "id": 10,
+      "tipo": "Supermercado",
+      "costo": 50000,
+      "name": "Super express",
+      "fecha": "2022-08-13",
+      "horaInicio": "9:30",
+      "horaFin": "10:00"
+    },
+    {
+      "id": 11,
+      "tipo": "Restaurante",
+      "costo": 200000,
+      "name": "Bistró Restaurant",
+      "fecha": "2023-11-16",
+      "horaInicio": "20:00",
+      "horaFin": "23:00"
+    },
+    {
+      "id": 12,
+      "tipo": "Gimnasio",
+      "costo": 1000000,
+      "name": "PowerGym",
+      "fecha": "2023-04-25",
+      "horaInicio": "17:00",
+      "horaFin": "19:30"
+    }
+  ]
+}]
