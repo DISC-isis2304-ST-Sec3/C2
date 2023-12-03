@@ -75,6 +75,7 @@
   "empleados": [],
   "servicios": [
     {
+      "id": 1,
       "tipo": "Bar",
       "costo": 50,
       "nombre": "Kaput",
@@ -83,6 +84,7 @@
       "horaFin": "23:00"
     },
     {
+      "id": 2,
       "tipo": "Piscina",
       "costo": 0,
       "nombre": "piscina general",
@@ -91,6 +93,7 @@
       "horaFin": "22:00"
     },
     {
+      "id":3,
       "tipo": "Gimnasio",
       "costo": 20,
       "nombre": "Gym",
@@ -99,6 +102,7 @@
       "horaFin": "20:00"
     },
     {
+      "id":4,
       "tipo": "Spa",
       "costo": 60,
       "nombre": "Spa",
