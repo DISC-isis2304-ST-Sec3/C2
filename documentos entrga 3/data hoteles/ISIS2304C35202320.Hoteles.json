@@ -1,0 +1,110 @@
+[{
+  "_id": {
+    "$oid": "656cc1dc7d2d8ac39f4dbd9b"
+  },
+  "nombre": "Marriot Cancun",
+  "ciudad": "Cancun",
+  "Pais": "Mexico",
+  "tipo": "Resort",
+  "habitaciones": [
+    {
+      "numero": 1,
+      "tipo": "familiar",
+      "precio": 120000,
+      "comodidades": "Microondas, nevera, patio",
+      "porcentajeOcupacion": 8,
+      "consumo": 80000
+    },
+    {
+      "numero": 2,
+      "tipo": "suite",
+      "precio": 200000,
+      "comodidades": "Comedor, cocina",
+      "porcentajeOcupacion": 5,
+      "consumo": 200000
+    },
+    {
+      "numero": 3,
+      "tipo": "suite presidencial",
+      "precio": 350000,
+      "comodidades": "Jacuzzi, patio",
+      "porcentajeOcupacion": 12,
+      "consumo": 540000
+    },
+    {
+      "numero": 4,
+      "tipo": "doble",
+      "precio": 180000,
+      "comodidades": "Comedor, sala",
+      "porcentajeOcupacion": 10,
+      "consumo": 100000
+    },
+    {
+      "numero": 5,
+      "tipo": "sencilla",
+      "precio": 90000,
+      "comodidades": "Minibar",
+      "porcentajeOcupacion": 8,
+      "consumo": 40000
+    }
+  ],
+  "planesconsumo": [
+    {
+      "tiempo": "2023-01-10/2023-01-15",
+      "tipoPlan": "Corta estadía",
+      "precio": 300000,
+      "promociones": "5% en supermercados",
+      "beneficios": "wifi gratis"
+    },
+    {
+      "tiempo": "2023-01-20/2023--02-10",
+      "tipoPlan": "Larga estadía",
+      "precio": 5000000,
+      "promociones": "10% tiendas",
+      "beneficios": "todo incluido"
+    },
+    {
+      "tiempo": "2023-06-05//2023-06-13",
+      "tipoPlan": "Corta estadía",
+      "precio": 350000,
+      "promociones": "5% en restaurantes",
+      "beneficios": "desayuno incluido"
+    }
+  ],
+  "clientes": [],
+  "empleados": [],
+  "servicios": [
+    {
+      "tipo": "Piscina",
+      "costo": 20000,
+      "name": "Oasis",
+      "fecha": "2023-10-20",
+      "horaInicio": "8:00",
+      "horaFin": "10:00"
+    },
+    {
+      "tipo": "Supermercado",
+      "costo": 50000,
+      "name": "Super express",
+      "fecha": "2022-08-13",
+      "horaInicio": "9:30",
+      "horaFin": "10:00"
+    },
+    {
+      "tipo": "Restaurante",
+      "costo": 200000,
+      "name": "Bistró Restaurant",
+      "fecha": "2023-11-16",
+      "horaInicio": "20:00",
+      "horaFin": "23:00"
+    },
+    {
+      "tipo": "Gimnasio",
+      "costo": 1000000,
+      "name": "PowerGym",
+      "fecha": "2023-04-25",
+      "horaInicio": "17:00",
+      "horaFin": "19:30"
+    }
+  ]
+}]
