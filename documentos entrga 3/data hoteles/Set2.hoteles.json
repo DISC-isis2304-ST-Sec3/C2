@@ -70,6 +70,7 @@
   "empelados": [],
   "servicios": [
     {
+      "id": "1",
       "tipo": "Piscina",
       "costo": 0,
       "nombre": "le grand piscine",
@@ -78,6 +79,7 @@
       "horaFin": "20:00"
     },
     {
+      "id": "2",
       "tipo": "Spa",
       "costo": 150000,
       "nombre": "Mouline Rouge",
@@ -86,6 +88,7 @@
       "horaFin": "20:00"
     },
     {
+      "id": "3",
       "tipo": "Restaurante",
       "costo": 300000,
       "nombre": "le petit prince",
