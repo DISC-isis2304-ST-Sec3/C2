@@ -1,4 +1,4 @@
-[{
+{
   "_id": {
     "$oid": "656cba67ec06b05e4f63ddba"
   },
@@ -9,7 +9,8 @@
   "habitaciones": [
     {
       "numero": 1,
-      "tipo": "sencilla",
+      "tipo": "suite",
+       "precio": 500000,
       "comodidades": "Comedor, televisor, refrigerador",
       "porcentajeOcupación": 100,
       "consumo": 200000
@@ -17,6 +18,7 @@
     {
       "numero": 2,
       "tipo": "doble",
+       "precio": 250000,
       "comodidades": "Comedor, televisor, refrigerador",
       "porcentajeOcupación": 50,
       "consumo": 300000
@@ -24,6 +26,7 @@
     {
       "numero": 3,
       "tipo": "familiar",
+       "precio": 400000,
       "comodidades": "Comedor, televisor, cocina",
       "porcentajeOcupación": 40,
       "consumo": 500000
@@ -31,6 +34,7 @@
     {
       "numero": 4,
       "tipo": "suite",
+       "precio": 500000,
       "comodidades": "Comedor, televisor, cocina, jacuzzi",
       "porcentajeOcupación": 50,
       "consumo": 1000000
@@ -38,6 +42,7 @@
     {
       "numero": 5,
       "tipo": "suite presidencial",
+       "precio": 750000,
       "comodidades": "Comedor, televisor, cocina, jacuzzi, sala, mayordomo",
       "porcentajeOcupación": 100,
       "consumo": 2000000
@@ -66,8 +71,16 @@
       "beneficios": "servicio a la habitación gratis"
     }
   ],
-  "clientes": [],
-  "empleados": [],
+  "clientes": [
+    1000987653,
+    234567890,
+    1000987003
+  ],
+  "empleados": [
+    1001345678,
+    1001364678,
+    1001255678
+  ],
   "servicios": [
     {
       "id": "1",
@@ -97,4 +110,4 @@
       "horaFin": "22:00"
     }
   ]
-}]
+}

@@ -131,7 +131,8 @@
   "habitaciones": [
     {
       "numero": 1,
-      "tipo": "sencilla",
+      "tipo": "suite",
+       "precio": 500000,
       "comodidades": "Comedor, televisor, refrigerador",
       "porcentajeOcupación": 100,
       "consumo": 200000
@@ -139,6 +140,7 @@
     {
       "numero": 2,
       "tipo": "doble",
+       "precio": 250000,
       "comodidades": "Comedor, televisor, refrigerador",
       "porcentajeOcupación": 50,
       "consumo": 300000
@@ -146,6 +148,7 @@
     {
       "numero": 3,
       "tipo": "familiar",
+       "precio": 400000,
       "comodidades": "Comedor, televisor, cocina",
       "porcentajeOcupación": 40,
       "consumo": 500000
@@ -153,6 +156,7 @@
     {
       "numero": 4,
       "tipo": "suite",
+       "precio": 500000,
       "comodidades": "Comedor, televisor, cocina, jacuzzi",
       "porcentajeOcupación": 50,
       "consumo": 1000000
@@ -160,6 +164,7 @@
     {
       "numero": 5,
       "tipo": "suite presidencial",
+       "precio": 750000,
       "comodidades": "Comedor, televisor, cocina, jacuzzi, sala, mayordomo",
       "porcentajeOcupación": 100,
       "consumo": 2000000
