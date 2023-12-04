@@ -1,0 +1,536 @@
+RF1: 
+
+Insertar un tipo de habitación 
+
+db.Hoteles.updateOne( 
+
+  {nombre: "Marriot Bogota", "habitaciones.numero": 1 }, 
+
+  {$set: {"habitaciones.$.tipo": "suite" } } 
+
+); 
+
+Encontrar el tipo de habitación 
+
+db.Hoteles.findOne( 
+
+  {nombre: "Marriot Bogota", "habitaciones": { $elemMatch: { numero: 1 } } }, 
+
+  { id: 0, "habitaciones.$": 1 } 
+
+); 
+
+Actualizar el tipo de habitación 
+
+ 
+
+db.Hoteles.updateOne( 
+
+  {nombre: "Marriot Bogota", "habitaciones.numero": 1 }, 
+
+  {$set: {"habitaciones.$.tipo": "suite" } } 
+
+); 
+
+ 
+
+Borrar un tipo de habitación 
+
+db.Hoteles.updateOne( 
+
+  {nombre: "Marriot Bogota"}, 
+
+  {$pull: {habitaciones: {tipo: "doble"}}} 
+
+); 
+
+RF2: 
+
+Insertar una habitación 
+
+db.Hoteles.updateOne( 
+
+  { nombre: "Marriot Bogota" }, 
+
+  { 
+
+    $push: { 
+
+      habitaciones: { 
+
+        numero: 6, 
+
+        tipo: "familiar", 
+
+        precio: 460000, 
+
+        comodidades: "Comedor, cocina", 
+
+        porcentajeOcupacion: 8, 
+
+        consumo: 300000 
+
+      } 
+
+    } 
+
+  } 
+
+); 
+
+Encontrar una habitación 
+
+db.Hoteles.find( 
+
+  { nombre: "Marriot Bogota", "habitaciones.numero": 1 }, 
+
+  { _id: 0, "habitaciones.$": 1 } 
+
+); 
+
+ 
+
+Actualizar una habitación 
+
+ 
+
+db.Hoteles.updateOne( 
+
+  {nombre: "Marriot Cancun", "habitaciones.numero": 5 }, 
+
+  {$set: {"habitaciones.$.precio": 67000 } } 
+
+); 
+
+ 
+
+Borrar una habitación 
+
+db.Hoteles.updateOne( 
+
+  {nombre: "Marriot Bogota"}, 
+
+  {$pull: {habitaciones: {numero: 5}}}); 
+
+RF3: 
+
+Insertar un servicio del hotel 
+
+db.Hoteles.updateOne( 
+
+  { nombre: "Four Seasons Panama" }, 
+
+  { 
+
+    $push: { 
+
+      servicios: { 
+
+        id: 6, 
+
+        tipo: "Restaurante", 
+
+        costo: 80, 
+
+        nombre: "Corral", 
+
+        fecha: "2023-25-11", 
+
+        horaInicio: "19:00", 
+
+        horaFin: "23:00" 
+
+      } 
+
+    } 
+
+  } 
+
+); 
+
+ 
+
+Encontrar un servicio del hotel 
+
+db.Hoteles.find({nombre: "Four Seasons Panama", servicios:{$elemMatch:{id: 5}}}, {nombre: 1, "servicios.$" :1}); 
+
+Actualizar un servicio del hotel 
+
+ 
+
+db.Hoteles.updateOne( 
+
+  {nombre: "Four Seasons Panama", "servicios.id": 5 }, 
+
+  {$set: {"servicios.$.costo": 100 } } 
+
+); 
+
+ 
+
+Borrar un servicio del hotel 
+
+db.Hoteles.updateOne( 
+
+   {nombre: "Four Seasons Panama"}, 
+
+  {$pull: {servicios: {id: 5}}} 
+
+); 
+
+RF4: 
+
+Insertar una reserva 
+
+db.clientes.updateOne( {documento: 234567890}, {$push: { reservas:{ "_id": 1,   
+
+"fechaEntrada": "2023-12-03",  "fechaSalida": "2023-12-07",  "numPersonas": 10 }}}) 
+
+Actualizar reserva 
+
+db.clientes.updateOne( {documento: 234567890, "reservas._id": 1}, {$set:{"reservas.$.fechaEntrada": "2023-12-05"}}) 
+
+db.clientes.updateOne( {documento: 234567890, "reservas._id": 1}, {$set:{“reservas.$.fechaSalida”: "2023-12-10"}}) 
+
+db.clientes.updateOne( {documento: 234567890, "reservas._id": 1}, {$set:{“reservas.$.numPersonas”: 7}}) 
+
+Borrar reserva 
+
+db.clientes.updateOne({documento: 1000987653}, {$unset: {“reservas”:1 }}) 
+
+Encontrar una reserva 
+
+db.clientes.find( 
+
+  { "documento": 1000987653, "reservas._id":1 },{"reservas.$": 1}  
+
+); 
+
+RF5: 
+
+Insertar un consumo de un servicio del hotel 
+
+Db.servicios.insertOne({ 
+
+“_id”: 1234, 
+
+“tipo”: “Bar”, 
+
+“costo”: 50, 
+
+“nombre”: Kaput, 
+
+“fecha”: 2023-11-25, 
+
+“horaInicio”: 19:00, 
+
+“horaFin”: 23:00 
+
+}) 
+
+db.cuentas.updateOne( {“clientes.documento”: 1000987653}, {$push: { servicios: 1234}}}) 
+
+Borrar un consumo de un servicio del hotel 
+
+db.cuentas.updateOne({documento: 1000987653}, {$unset: {“servicios”: 1234}}) 
+
+Encontrar un consumo de un servicio del hotel 
+
+db.cuentas.findOne ({documento: 1000987653}, {“servicios.$”: 1234}) 
+
+RF6: 
+
+Insertar un checkin 
+
+db.clientes.updateOne( {documento: 1000987653}, {$push: { checkins:{ 
+
+“_id”: 1, 
+
+“cuentaAbierta”: true, 
+
+“dia”: 2023-12-07 
+
+}}}) 
+
+Actualizar checkin 
+
+db.clientes.updateOne( {documento:1000237894}, {$set:{“checkin.cuentaAbierta”: false}}) 
+
+Borrar checkin 
+
+db.Clientes.updateOne( 
+
+  { "documento": 1112223334}, 
+
+  { $unset: { "checkin": 1 } } 
+
+); 
+
+Encontrar un checkin 
+
+db.clientes.find({documento: 1000987653, “checkins.id”: 18}) 
+
+RF7: 
+
+Insertar un checkout 
+
+db.Clientes.updateOne( 
+
+  { "documento": 1234593 }, 
+
+  { 
+
+    $set: { 
+
+      "checkout": { 
+
+        "_id": 17, 
+
+        "cuentaAbierta": true, 
+
+        "cuentaTotal": 1850000, 
+
+        "dia": "2023-05-20" 
+
+      } 
+
+    } 
+
+  } 
+
+); 
+
+ 
+
+Actualizar un checkout 
+
+db.Clientes.updateOne( 
+
+  { "documento": 185739900 }, 
+
+  { $set: { "checkout.cuentaTotal": 1500000 } } 
+
+); 
+
+ 
+
+Eliminar un checkout 
+
+db.Clientes.updateOne( 
+
+  { "documento": 1112223334}, 
+
+  { $unset: { "checkout": 1 } } 
+
+); 
+
+Consultar un checkout 
+
+db.Clientes.find( 
+  	  { "documento": 1000987653, "checkout.id": 15 }, 
+  	  { "checkout.$": 1 } 
+	); 
+
+Consultas básicas 
+
+RF1: 
+
+db.clientes.aggregate([ 
+
+    { 
+
+        $match: { 
+
+            "reserva.fechaEntrada": { 
+
+                $lte: ISODate("2023-12-15T00:00:00.000Z"), 
+
+                $gte: ISODate("2023-02-05T00:00:00.000Z") 
+
+            }, 
+
+            "reserva.fechaSalida": { 
+
+                $gte: ISODate("2023-02-05T00:00:00.000Z"), 
+
+                $lte: ISODate("2023-12-15T00:00:00.000Z") 
+
+            } 
+
+        } 
+
+    }, 
+
+    { 
+
+        $project: { 
+
+            id_habitacion: 1, 
+
+            cuentaTotal: "$checkout.cuentaTotal" 
+
+        } 
+
+    }, 
+
+    { 
+
+        $group: { 
+
+            _id: "$id_habitacion", 
+
+            totalCuenta: { $sum: "$cuentaTotal" } 
+
+        } 
+
+    } 
+
+]); 
+
+RF2: 
+
+db.clientes.aggregate([ 
+
+    { 
+
+        $lookup: { 
+
+            from: "hoteles", 
+
+            localField: "id_habitacion", 
+
+            foreignField: "habitaciones.numero", 
+
+            as: "listaHabitacionesClientes" 
+
+        } 
+
+    }, 
+
+    { 
+
+        $match: { 
+
+            "reserva.fechaEntrada": { 
+
+                $lte: ISODate("2023-12-15T00:00:00.000Z"), 
+
+                $gte: ISODate("2023-02-05T00:00:00.000Z") 
+
+            }, 
+
+            "reserva.fechaSalida": { 
+
+                $gte: ISODate("2023-02-05T00:00:00.000Z"), 
+
+                $lte: ISODate("2023-12-15T00:00:00.000Z") 
+
+            } 
+
+        } 
+
+    }, 
+
+    { 
+
+        $project: { 
+
+            "habitaciones.numero": 1, 
+
+            "habitaciones.porcentajeOcupacion": 1 
+
+        } 
+
+    } 
+
+]); 
+
+db.hoteles.find({"habitaciones.porcentajeOcupacion": {$gte: 0, $lte: 100}}, {"habitaciones.numero":1, "habitaciones.porcentajeOcupacion":1}) 
+
+ 
+
+RF3: 
+
+db.clientes.aggregate([ 
+
+    { 
+
+        $match: { 
+
+            "reserva.fechaEntrada": { 
+
+                $lte: ISODate("2023-12-15T00:00:00.000Z"), 
+
+                $gte: ISODate("2023-02-05T00:00:00.000Z") 
+
+            }, 
+
+            "reserva.fechaSalida": { 
+
+                $gte: ISODate("2023-02-05T00:00:00.000Z"), 
+
+                $lte: ISODate("2023-12-15T00:00:00.000Z") 
+
+            } 
+
+        } 
+
+    }, 
+
+    { 
+
+        $project: { 
+
+            documento: 1, 
+
+            cuentaTotal: "$checkout.cuentaTotal" 
+
+        } 
+
+    }, 
+
+    { 
+
+        $group: { 
+
+            _id: "$documento", 
+
+            totalCuenta: { $sum: "$cuentaTotal" } 
+
+        } 
+
+    } 
+
+]); 
+
+Consultas avanzadas 
+
+db.Clientes.aggregate([{$lookup: {from: “Cuentas”, localField: “documento”, foreignField: “clienteDocumento”, as: “cuentaCliente”}}, {$match: {"reserva.fechaEntrada": { 
+
+                $lte: ISODate("2023-12-15T00:00:00.000Z"), 
+
+                $gte: ISODate("2023-02-05T00:00:00.000Z") 
+
+            }, 
+
+            "reserva.fechaSalida": { 
+
+                $gte: ISODate("2023-02-05T00:00:00.000Z"), 
+
+                $lte: ISODate("2023-12-15T00:00:00.000Z") 
+
+            }, 
+
+{ 
+
+“$cuentaCliente.consumidos”: {$not: 2}} 
+
+}, 
+
+{ 
+
+$project: {nombre: 1} 
+
+} 
+
+]); 

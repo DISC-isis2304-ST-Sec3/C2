@@ -1,0 +1,4 @@
+Pasos:
+1. Crear colecciones de hoteles, clientes, cuentas, y empleados en mongo compass.
+2. Importar los .json correspondientes a cada colección.
+3. Utilizar las consultas deseadas.
