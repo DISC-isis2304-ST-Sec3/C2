@@ -6,6 +6,7 @@
   "apellido": "Sanchez",
   "edad": 30,
   "documento": 1000987653,
+  "tipo": "Cliente",
   "reserva": {
     "id": 5,
     "fechaEntrada": "2023-12-15",
@@ -33,6 +34,7 @@
   "apellido": "Alvarez",
   "edad": 25,
   "documento": 234567890,
+  "tipo": "Cliente",
   "reserva": {
     "id": 6,
     "fechaEntrada": "2023-12-04",
@@ -59,6 +61,7 @@
   "nombre": "Roberto",
   "apellido": "Restrepo",
   "edad": 40,
+  "tipo": "Cliente",
   "documento": 1000987003,
   "reserva": {
     "id": 7,
